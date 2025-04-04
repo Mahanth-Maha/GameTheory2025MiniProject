@@ -1,0 +1,409 @@
+nohup: ignoring input
+[>] Sampled 12 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv
+[+] Starting parameter search with 192 combinations...
+
+Parameter Combinations:   0%|          | 0/192 [00:00<?, ?it/s]
+Parameter Combinations:   1%|          | 1/192 [00:04<12:47,  4.02s/it]
+Parameter Combinations:   1%|          | 2/192 [00:08<13:04,  4.13s/it]
+Parameter Combinations:   2%|▏         | 3/192 [00:12<13:08,  4.17s/it]
+Parameter Combinations:   2%|▏         | 4/192 [00:16<13:06,  4.18s/it]
+Parameter Combinations:   3%|▎         | 5/192 [00:20<13:03,  4.19s/it]
+Parameter Combinations:   3%|▎         | 6/192 [00:25<13:00,  4.20s/it]
+Parameter Combinations:   4%|▎         | 7/192 [00:29<12:56,  4.20s/it]
+Parameter Combinations:   4%|▍         | 8/192 [00:33<12:52,  4.20s/it]
+Parameter Combinations:   5%|▍         | 9/192 [00:37<12:51,  4.22s/it]
+Parameter Combinations:   5%|▌         | 10/192 [00:41<12:46,  4.21s/it]
+Parameter Combinations:   6%|▌         | 11/192 [00:46<12:37,  4.19s/it]
+Parameter Combinations:   6%|▋         | 12/192 [00:50<12:38,  4.22s/it]
+Parameter Combinations:   7%|▋         | 13/192 [00:54<12:31,  4.20s/it]
+Parameter Combinations:   7%|▋         | 14/192 [00:58<12:25,  4.19s/it]
+Parameter Combinations:   8%|▊         | 15/192 [01:02<12:22,  4.19s/it]
+Parameter Combinations:   8%|▊         | 16/192 [01:07<12:19,  4.20s/it]
+Parameter Combinations:   9%|▉         | 17/192 [01:11<12:12,  4.19s/it]
+Parameter Combinations:   9%|▉         | 18/192 [01:15<12:08,  4.18s/it]
+Parameter Combinations:  10%|▉         | 19/192 [01:19<12:08,  4.21s/it]
+Parameter Combinations:  10%|█         | 20/192 [01:23<12:01,  4.19s/it]
+Parameter Combinations:  11%|█         | 21/192 [01:28<11:56,  4.19s/it]
+Parameter Combinations:  11%|█▏        | 22/192 [01:32<12:09,  4.29s/it]
+Parameter Combinations:  12%|█▏        | 23/192 [01:36<12:09,  4.32s/it]
+Parameter Combinations:  12%|█▎        | 24/192 [01:41<12:06,  4.32s/it]
+Parameter Combinations:  13%|█▎        | 25/192 [01:45<12:04,  4.34s/it]
+Parameter Combinations:  14%|█▎        | 26/192 [01:49<11:54,  4.30s/it]
+Parameter Combinations:  14%|█▍        | 27/192 [01:54<11:45,  4.28s/it]
+Parameter Combinations:  15%|█▍        | 28/192 [01:58<11:33,  4.23s/it]
+Parameter Combinations:  15%|█▌        | 29/192 [02:02<11:19,  4.17s/it]
+Parameter Combinations:  16%|█▌        | 30/192 [02:06<11:07,  4.12s/it]
+Parameter Combinations:  16%|█▌        | 31/192 [02:10<10:55,  4.07s/it]
+Parameter Combinations:  17%|█▋        | 32/192 [02:14<10:47,  4.05s/it]
+Parameter Combinations:  17%|█▋        | 33/192 [02:18<10:37,  4.01s/it]
+Parameter Combinations:  18%|█▊        | 34/192 [02:22<10:28,  3.98s/it]
+Parameter Combinations:  18%|█▊        | 35/192 [02:25<10:20,  3.95s/it]
+Parameter Combinations:  19%|█▉        | 36/192 [02:29<10:18,  3.97s/it]
+Parameter Combinations:  19%|█▉        | 37/192 [02:33<10:12,  3.95s/it]
+Parameter Combinations:  20%|█▉        | 38/192 [02:37<10:07,  3.95s/it]
+Parameter Combinations:  20%|██        | 39/192 [02:41<10:03,  3.94s/it]
+Parameter Combinations:  21%|██        | 40/192 [02:45<09:58,  3.94s/it]
+Parameter Combinations:  21%|██▏       | 41/192 [02:49<09:53,  3.93s/it]
+Parameter Combinations:  22%|██▏       | 42/192 [02:53<09:52,  3.95s/it]
+Parameter Combinations:  22%|██▏       | 43/192 [02:57<09:53,  3.98s/it]
+Parameter Combinations:  23%|██▎       | 44/192 [03:01<09:47,  3.97s/it]
+Parameter Combinations:  23%|██▎       | 45/192 [03:05<09:40,  3.95s/it]
+Parameter Combinations:  24%|██▍       | 46/192 [03:09<09:37,  3.96s/it]
+Parameter Combinations:  24%|██▍       | 47/192 [03:13<09:34,  3.96s/it]
+Parameter Combinations:  25%|██▌       | 48/192 [03:17<09:27,  3.94s/it]
+Parameter Combinations:  26%|██▌       | 49/192 [03:21<09:23,  3.94s/it]
+Parameter Combinations:  26%|██▌       | 50/192 [03:25<09:21,  3.96s/it]
+Parameter Combinations:  27%|██▋       | 51/192 [03:29<09:16,  3.95s/it]
+Parameter Combinations:  27%|██▋       | 52/192 [03:33<09:11,  3.94s/it]
+Parameter Combinations:  28%|██▊       | 53/192 [03:36<09:05,  3.93s/it]
+Parameter Combinations:  28%|██▊       | 54/192 [03:40<09:05,  3.96s/it]
+Parameter Combinations:  29%|██▊       | 55/192 [03:44<08:59,  3.94s/it]
+Parameter Combinations:  29%|██▉       | 56/192 [03:48<08:55,  3.94s/it]
+Parameter Combinations:  30%|██▉       | 57/192 [03:52<08:50,  3.93s/it]
+Parameter Combinations:  30%|███       | 58/192 [03:56<08:48,  3.94s/it]
+Parameter Combinations:  31%|███       | 59/192 [04:00<08:42,  3.93s/it]
+Parameter Combinations:  31%|███▏      | 60/192 [04:04<08:38,  3.92s/it]
+Parameter Combinations:  32%|███▏      | 61/192 [04:08<08:36,  3.94s/it]
+Parameter Combinations:  32%|███▏      | 62/192 [04:12<08:31,  3.93s/it]
+Parameter Combinations:  33%|███▎      | 63/192 [04:16<08:27,  3.93s/it]
+Parameter Combinations:  33%|███▎      | 64/192 [04:20<08:21,  3.92s/it]
+Parameter Combinations:  34%|███▍      | 65/192 [04:24<08:20,  3.94s/it]
+Parameter Combinations:  34%|███▍      | 66/192 [04:28<08:13,  3.92s/it]
+Parameter Combinations:  35%|███▍      | 67/192 [04:31<08:09,  3.92s/it]
+Parameter Combinations:  35%|███▌      | 68/192 [04:35<08:05,  3.91s/it]
+Parameter Combinations:  36%|███▌      | 69/192 [04:39<08:02,  3.92s/it]
+Parameter Combinations:  36%|███▋      | 70/192 [04:43<07:57,  3.92s/it]
+Parameter Combinations:  37%|███▋      | 71/192 [04:47<07:53,  3.91s/it]
+Parameter Combinations:  38%|███▊      | 72/192 [04:51<07:52,  3.94s/it]
+Parameter Combinations:  38%|███▊      | 73/192 [04:55<07:47,  3.93s/it]
+Parameter Combinations:  39%|███▊      | 74/192 [04:59<07:44,  3.93s/it]
+Parameter Combinations:  39%|███▉      | 75/192 [05:03<07:42,  3.96s/it]
+Parameter Combinations:  40%|███▉      | 76/192 [05:07<07:40,  3.97s/it]
+Parameter Combinations:  40%|████      | 77/192 [05:11<07:34,  3.95s/it]
+Parameter Combinations:  41%|████      | 78/192 [05:15<07:29,  3.94s/it]
+Parameter Combinations:  41%|████      | 79/192 [05:19<07:26,  3.95s/it]
+Parameter Combinations:  42%|████▏     | 80/192 [05:23<07:20,  3.93s/it]
+Parameter Combinations:  42%|████▏     | 81/192 [05:27<07:16,  3.93s/it]
+Parameter Combinations:  43%|████▎     | 82/192 [05:31<07:12,  3.93s/it]
+Parameter Combinations:  43%|████▎     | 83/192 [05:34<07:09,  3.94s/it]
+Parameter Combinations:  44%|████▍     | 84/192 [05:38<07:05,  3.94s/it]
+Parameter Combinations:  44%|████▍     | 85/192 [05:42<07:00,  3.93s/it]
+Parameter Combinations:  45%|████▍     | 86/192 [05:46<07:00,  3.96s/it]
+Parameter Combinations:  45%|████▌     | 87/192 [05:50<06:54,  3.95s/it]
+Parameter Combinations:  46%|████▌     | 88/192 [05:54<06:50,  3.95s/it]
+Parameter Combinations:  46%|████▋     | 89/192 [05:58<06:48,  3.96s/it]
+Parameter Combinations:  47%|████▋     | 90/192 [06:02<06:44,  3.97s/it]
+Parameter Combinations:  47%|████▋     | 91/192 [06:06<06:38,  3.95s/it]
+Parameter Combinations:  48%|████▊     | 92/192 [06:10<06:34,  3.95s/it]
+Parameter Combinations:  48%|████▊     | 93/192 [06:14<06:32,  3.96s/it]
+Parameter Combinations:  49%|████▉     | 94/192 [06:18<06:28,  3.96s/it]
+Parameter Combinations:  49%|████▉     | 95/192 [06:22<06:23,  3.95s/it]
+Parameter Combinations:  50%|█████     | 96/192 [06:26<06:19,  3.96s/it]
+Parameter Combinations:  51%|█████     | 97/192 [06:30<06:16,  3.96s/it]
+Parameter Combinations:  51%|█████     | 98/192 [06:34<06:10,  3.94s/it]
+Parameter Combinations:  52%|█████▏    | 99/192 [06:38<06:06,  3.94s/it]
+Parameter Combinations:  52%|█████▏    | 100/192 [06:42<06:03,  3.95s/it]
+Parameter Combinations:  53%|█████▎    | 101/192 [06:46<05:58,  3.94s/it]
+Parameter Combinations:  53%|█████▎    | 102/192 [06:49<05:53,  3.93s/it]
+Parameter Combinations:  54%|█████▎    | 103/192 [06:53<05:48,  3.92s/it]
+Parameter Combinations:  54%|█████▍    | 104/192 [06:57<05:44,  3.91s/it]
+Parameter Combinations:  55%|█████▍    | 105/192 [07:01<05:39,  3.91s/it]
+Parameter Combinations:  55%|█████▌    | 106/192 [07:05<05:35,  3.90s/it]
+Parameter Combinations:  56%|█████▌    | 107/192 [07:09<05:31,  3.90s/it]
+Parameter Combinations:  56%|█████▋    | 108/192 [07:13<05:27,  3.90s/it]
+Parameter Combinations:  57%|█████▋    | 109/192 [07:17<05:23,  3.89s/it]
+Parameter Combinations:  57%|█████▋    | 110/192 [07:21<05:18,  3.89s/it]
+Parameter Combinations:  58%|█████▊    | 111/192 [07:25<05:14,  3.89s/it]
+Parameter Combinations:  58%|█████▊    | 112/192 [07:28<05:11,  3.89s/it]
+Parameter Combinations:  59%|█████▉    | 113/192 [07:32<05:07,  3.89s/it]
+Parameter Combinations:  59%|█████▉    | 114/192 [07:36<05:04,  3.90s/it]
+Parameter Combinations:  60%|█████▉    | 115/192 [07:40<05:02,  3.93s/it]
+Parameter Combinations:  60%|██████    | 116/192 [07:44<04:58,  3.93s/it]
+Parameter Combinations:  61%|██████    | 117/192 [07:48<04:54,  3.93s/it]
+Parameter Combinations:  61%|██████▏   | 118/192 [07:52<04:52,  3.96s/it]
+Parameter Combinations:  62%|██████▏   | 119/192 [07:56<04:48,  3.95s/it]
+Parameter Combinations:  62%|██████▎   | 120/192 [08:00<04:44,  3.95s/it]
+Parameter Combinations:  63%|██████▎   | 121/192 [08:04<04:39,  3.94s/it]
+Parameter Combinations:  64%|██████▎   | 122/192 [08:08<04:35,  3.93s/it]
+Parameter Combinations:  64%|██████▍   | 123/192 [08:12<04:30,  3.92s/it]
+Parameter Combinations:  65%|██████▍   | 124/192 [08:16<04:26,  3.92s/it]
+Parameter Combinations:  65%|██████▌   | 125/192 [08:20<04:22,  3.91s/it]
+Parameter Combinations:  66%|██████▌   | 126/192 [08:23<04:17,  3.91s/it]
+Parameter Combinations:  66%|██████▌   | 127/192 [08:27<04:14,  3.92s/it]
+Parameter Combinations:  67%|██████▋   | 128/192 [08:31<04:10,  3.91s/it]
+Parameter Combinations:  67%|██████▋   | 129/192 [08:35<04:05,  3.90s/it]
+Parameter Combinations:  68%|██████▊   | 130/192 [08:39<04:03,  3.93s/it]
+Parameter Combinations:  68%|██████▊   | 131/192 [08:43<04:00,  3.95s/it]
+Parameter Combinations:  69%|██████▉   | 132/192 [08:47<03:57,  3.96s/it]
+Parameter Combinations:  69%|██████▉   | 133/192 [08:51<03:54,  3.97s/it]
+Parameter Combinations:  70%|██████▉   | 134/192 [08:55<03:50,  3.98s/it]
+Parameter Combinations:  70%|███████   | 135/192 [08:59<03:48,  4.01s/it]
+Parameter Combinations:  71%|███████   | 136/192 [09:03<03:44,  4.00s/it]
+Parameter Combinations:  71%|███████▏  | 137/192 [09:07<03:39,  4.00s/it]
+Parameter Combinations:  72%|███████▏  | 138/192 [09:11<03:35,  3.99s/it]
+Parameter Combinations:  72%|███████▏  | 139/192 [09:15<03:30,  3.98s/it]
+Parameter Combinations:  73%|███████▎  | 140/192 [09:19<03:26,  3.98s/it]
+Parameter Combinations:  73%|███████▎  | 141/192 [09:23<03:23,  3.98s/it]
+Parameter Combinations:  74%|███████▍  | 142/192 [09:27<03:19,  3.99s/it]
+Parameter Combinations:  74%|███████▍  | 143/192 [09:31<03:15,  3.99s/it]
+Parameter Combinations:  75%|███████▌  | 144/192 [09:35<03:11,  3.99s/it]
+Parameter Combinations:  76%|███████▌  | 145/192 [09:39<03:07,  3.99s/it]
+Parameter Combinations:  76%|███████▌  | 146/192 [09:43<03:04,  4.01s/it]
+Parameter Combinations:  77%|███████▋  | 147/192 [09:47<02:59,  3.99s/it]
+Parameter Combinations:  77%|███████▋  | 148/192 [09:51<02:55,  3.98s/it]
+Parameter Combinations:  78%|███████▊  | 149/192 [09:55<02:51,  3.98s/it]
+Parameter Combinations:  78%|███████▊  | 150/192 [09:59<02:46,  3.97s/it]
+Parameter Combinations:  79%|███████▊  | 151/192 [10:03<02:42,  3.96s/it]
+Parameter Combinations:  79%|███████▉  | 152/192 [10:07<02:38,  3.96s/it]
+Parameter Combinations:  80%|███████▉  | 153/192 [10:11<02:34,  3.96s/it]
+Parameter Combinations:  80%|████████  | 154/192 [10:15<02:30,  3.96s/it]
+Parameter Combinations:  81%|████████  | 155/192 [10:19<02:26,  3.97s/it]
+Parameter Combinations:  81%|████████▏ | 156/192 [10:23<02:22,  3.97s/it]
+Parameter Combinations:  82%|████████▏ | 157/192 [10:27<02:18,  3.96s/it]
+Parameter Combinations:  82%|████████▏ | 158/192 [10:31<02:14,  3.96s/it]
+Parameter Combinations:  83%|████████▎ | 159/192 [10:35<02:10,  3.96s/it]
+Parameter Combinations:  83%|████████▎ | 160/192 [10:39<02:06,  3.96s/it]
+Parameter Combinations:  84%|████████▍ | 161/192 [10:42<02:02,  3.95s/it]
+Parameter Combinations:  84%|████████▍ | 162/192 [10:46<01:58,  3.94s/it]
+Parameter Combinations:  85%|████████▍ | 163/192 [10:50<01:54,  3.94s/it]
+Parameter Combinations:  85%|████████▌ | 164/192 [10:54<01:50,  3.94s/it]
+Parameter Combinations:  86%|████████▌ | 165/192 [10:58<01:46,  3.93s/it]
+Parameter Combinations:  86%|████████▋ | 166/192 [11:02<01:42,  3.94s/it]
+Parameter Combinations:  87%|████████▋ | 167/192 [11:06<01:38,  3.95s/it]
+Parameter Combinations:  88%|████████▊ | 168/192 [11:10<01:34,  3.95s/it]
+Parameter Combinations:  88%|████████▊ | 169/192 [11:14<01:30,  3.95s/it]
+Parameter Combinations:  89%|████████▊ | 170/192 [11:18<01:26,  3.95s/it]
+Parameter Combinations:  89%|████████▉ | 171/192 [11:22<01:23,  3.97s/it]
+Parameter Combinations:  90%|████████▉ | 172/192 [11:26<01:19,  3.97s/it]
+Parameter Combinations:  90%|█████████ | 173/192 [11:30<01:15,  3.96s/it]
+Parameter Combinations:  91%|█████████ | 174/192 [11:34<01:11,  3.97s/it]
+Parameter Combinations:  91%|█████████ | 175/192 [11:38<01:07,  3.97s/it]
+Parameter Combinations:  92%|█████████▏| 176/192 [11:42<01:03,  3.99s/it]
+Parameter Combinations:  92%|█████████▏| 177/192 [11:46<00:59,  3.97s/it]
+Parameter Combinations:  93%|█████████▎| 178/192 [11:50<00:55,  3.97s/it]
+Parameter Combinations:  93%|█████████▎| 179/192 [11:54<00:51,  3.97s/it]
+Parameter Combinations:  94%|█████████▍| 180/192 [11:58<00:47,  4.00s/it]
+Parameter Combinations:  94%|█████████▍| 181/192 [12:02<00:44,  4.02s/it]
+Parameter Combinations:  95%|█████████▍| 182/192 [12:06<00:40,  4.02s/it]
+Parameter Combinations:  95%|█████████▌| 183/192 [12:10<00:36,  4.02s/it]
+Parameter Combinations:  96%|█████████▌| 184/192 [12:14<00:32,  4.03s/it]
+Parameter Combinations:  96%|█████████▋| 185/192 [12:18<00:28,  4.03s/it]
+Parameter Combinations:  97%|█████████▋| 186/192 [12:22<00:24,  4.04s/it]
+Parameter Combinations:  97%|█████████▋| 187/192 [12:26<00:20,  4.05s/it]
+Parameter Combinations:  98%|█████████▊| 188/192 [12:30<00:16,  4.06s/it]
+Parameter Combinations:  98%|█████████▊| 189/192 [12:34<00:12,  4.04s/it]
+Parameter Combinations:  99%|█████████▉| 190/192 [12:38<00:08,  4.01s/it]
+Parameter Combinations:  99%|█████████▉| 191/192 [12:42<00:04,  4.02s/it]
+Parameter Combinations: 100%|██████████| 192/192 [12:46<00:00,  4.04s/it]
+Parameter Combinations: 100%|██████████| 192/192 [12:46<00:00,  3.99s/it]
+[>] Running combination 1/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 2/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 3/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 4/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 5/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 6/192: {'alpha': 1.0, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 7/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 8/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 9/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 10/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 11/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 12/192: {'alpha': 1.0, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 13/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 14/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 15/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 16/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 17/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 18/192: {'alpha': 1.0, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 19/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 20/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 21/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 22/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 23/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 24/192: {'alpha': 1.0, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 25/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 26/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 27/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 28/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 29/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 30/192: {'alpha': 1.0, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 31/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 32/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 33/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 34/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 35/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 36/192: {'alpha': 1.0, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 37/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 38/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 39/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 40/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 41/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 42/192: {'alpha': 1.0, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 43/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 44/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 45/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 46/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 47/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 48/192: {'alpha': 1.0, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 49/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 50/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 51/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 52/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 53/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 54/192: {'alpha': 1.1, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 55/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 56/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 57/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 58/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 59/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 60/192: {'alpha': 1.1, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 61/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 62/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 63/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 64/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 65/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 66/192: {'alpha': 1.1, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 67/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 68/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 69/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 70/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 71/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 72/192: {'alpha': 1.1, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 73/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 74/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 75/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 76/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 77/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 78/192: {'alpha': 1.1, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 79/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 80/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 81/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 82/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 83/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 84/192: {'alpha': 1.1, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 85/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 86/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 87/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 88/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 89/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 90/192: {'alpha': 1.1, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 91/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 92/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 93/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 94/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 95/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 96/192: {'alpha': 1.1, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 97/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 98/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 99/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 100/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 101/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 102/192: {'alpha': 1.25, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 103/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 104/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 105/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 106/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 107/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 108/192: {'alpha': 1.25, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 109/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 110/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 111/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 112/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 113/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 114/192: {'alpha': 1.25, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 115/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 116/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 117/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 118/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 119/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 120/192: {'alpha': 1.25, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 121/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 122/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 123/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 124/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 125/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 126/192: {'alpha': 1.25, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 127/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 128/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 129/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 130/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 131/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 132/192: {'alpha': 1.25, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 133/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 134/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 135/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 136/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 137/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 138/192: {'alpha': 1.25, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 139/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 140/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 141/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 142/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 143/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 144/192: {'alpha': 1.25, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 145/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 146/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 147/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 148/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 149/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 150/192: {'alpha': 1.5, 'beta': 0.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 151/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 152/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 153/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 154/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 155/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 156/192: {'alpha': 1.5, 'beta': 0.05, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 157/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 158/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 159/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 160/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 161/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 162/192: {'alpha': 1.5, 'beta': 0.1, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 163/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 164/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 165/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 166/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 167/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 168/192: {'alpha': 1.5, 'beta': 0.15, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 169/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 170/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 171/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 172/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 173/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 174/192: {'alpha': 1.5, 'beta': 0.2, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 175/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 176/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 177/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 178/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 179/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 180/192: {'alpha': 1.5, 'beta': 0.25, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 181/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 182/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 183/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 184/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 185/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 186/192: {'alpha': 1.5, 'beta': 0.5, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 187/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 188/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 189/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'linear', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 190/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 1500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 191/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2000, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Running combination 192/192: {'alpha': 1.5, 'beta': 1.0, 'utility_func_name': 'logarithmic', 'vcg_price_per_credit': 2500, 'shapley_samples': 1000, 'exact_shapley_threshold': 10, 'core_check_threshold': 15}
+[>] Parameter search results saved to ./logs/params/parameters_search.csv
+[>] Results DataFrame shape: (192, 23)
+
+--- Best Result (Core Stable & Max VCG Surplus) ---
+
+[>] Parameters:
+alpha                         1.0
+beta                          0.0
+utility_func_name          linear
+vcg_price_per_credit         2500
+shapley_samples              1000
+exact_shapley_threshold        10
+core_check_threshold           15
+[>] Metrics:    
+vcg_total_surplus       13348.0
+shapley_values_gini    0.120543
+is_shapley_in_core         True
+[+] Parameter search finished
+[+] Total time:  0 Hrs 12 Min 46 Sec)
