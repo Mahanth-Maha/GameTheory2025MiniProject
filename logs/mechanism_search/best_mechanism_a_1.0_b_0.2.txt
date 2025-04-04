@@ -1,0 +1,39 @@
+nohup: ignoring input
+[+] Sampled 100 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv (Seed: 24004)
+
+--- Running Final Analysis ---
+Mechanism: Shapley Allocation
+Parameters: alpha=1.0, beta=0.2
+Number of Farmers (N): 100
+Calculating Shapley Values (Monte Carlo)...
+Shapley calculation complete.
+Calculating Metrics...
+Core check skipped (N=100 > 15)
+
+--- Final Run Results ---
+Mechanism:                  Shapley Allocation
+Parameters (alpha, beta): (1.0, 0.2)
+Number of Farmers (N):      100
+------------------------------
+Average Farmer Profit:    7,669,114,062.00 INR
+Fairness (Gini Coeff.):   0.1404 (0=Perfect Equality)
+Individual Rationality:   Met by ALL
+IR Percentage Met:        100.0%
+Core Stability:           Not Checked (N > Threshold)
+Total Value Dist. (v(N)): 766,911,406,200.00 INR
+------------------------------
+
+Sample Farmer Payoffs:
+Farmer_ID  Shapley_Payoff  Standalone_Payoff_INR         Gain
+   F00075    6.368297e+09                16400.0 6.368280e+09
+   F00228    7.951816e+09                20500.0 7.951795e+09
+   F00070    1.074223e+10                27300.0 1.074221e+10
+   F00016    8.830141e+09                22400.0 8.830119e+09
+   F00173    7.784008e+09                19900.0 7.783988e+09
+   F00015    1.146242e+10                29300.0 1.146239e+10
+   F00104    4.980114e+09                12700.0 4.980101e+09
+   F00005    7.804206e+09                19900.0 7.804187e+09
+   F00049    9.464710e+09                24100.0 9.464686e+09
+   F00232    8.102816e+09                20900.0 8.102795e+09
+
+[+] Final run finished in 274.81 seconds.
