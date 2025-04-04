@@ -1,0 +1,43 @@
+[>] Loaded data from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+--- Running Individual vs. Grand Coalition (N=12) ---
+
+[>] Average Gain (Shapley vs Standalone): 1199748166.67 INR
+[>] Percentage of Farmers Better Off: 100.0%
+   Farmer_ID  Standalone_Payoff  Shapley_Value  Gain_vs_Standalone
+0     F00075            16400.0   8.752079e+08        8.751915e+08
+1     F00228            20500.0   1.098119e+09        1.098098e+09
+2     F00070            27300.0   1.461997e+09        1.461970e+09
+3     F00016            22400.0   1.204008e+09        1.203986e+09
+4     F00173            19900.0   1.070489e+09        1.070469e+09
+5     F00015            29300.0   1.578888e+09        1.578859e+09
+6     F00104            12700.0   6.850346e+08        6.850219e+08
+7     F00005            19900.0   1.062412e+09        1.062392e+09
+8     F00049            24100.0   1.305375e+09        1.305351e+09
+9     F00232            20900.0   1.127689e+09        1.127668e+09
+10    F00186            28500.0   1.519996e+09        1.519967e+09
+11    F00063            26400.0   1.408030e+09        1.408004e+09
+
+--- Running Coalition Size Analysis (Sizes: [3, 5, 8, 12]) ---
+
+[>] Analyzing size 3...
+[>] Analyzing size 5...
+[>] Analyzing size 8...
+[>] Analyzing size 12...
+[>] Coalition Size Analysis Results:
+   Size  Avg_Value_per_Farmer  ...  Avg_Shapley_Value  StdDev_Shapley_Value
+0     3          2.497367e+08  ...       2.497367e+08          6.189523e+07
+1     5          3.494264e+08  ...       3.494264e+08          5.952898e+07
+2     8          6.292046e+08  ...       6.292046e+08          7.946196e+07
+3    12          9.397480e+08  ...       9.397480e+08          1.504974e+08
+
+[4 rows x 5 columns]
+[>] Saved coalition size plot: ./logs/plots/coalition/n_farmers_12/coalition_size_analysis.png
+
+--- Running Distribution Stability Analysis (N=12) ---
+
+[>] Distribution Stability Analysis Results:
+                        Rule  Is_in_Core    Gini
+0                    Shapley        True  0.1195
+1                Equal Split        True  0.0000
+2  Proportional (Standalone)        True  0.1205

@@ -1,0 +1,52 @@
+[>] Loaded data from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+--- Running Individual vs. Grand Coalition (N=25) ---
+
+[>] Average Gain (Shapley vs Standalone): 2020050000.00 INR
+[>] Percentage of Farmers Better Off: 100.0%
+   Farmer_ID  Standalone_Payoff  Shapley_Value  Gain_vs_Standalone
+0     F00075            16400.0   1.635244e+09        1.635228e+09
+1     F00228            20500.0   2.049585e+09        2.049565e+09
+2     F00070            27300.0   2.757153e+09        2.757126e+09
+3     F00016            22400.0   2.257728e+09        2.257705e+09
+4     F00173            19900.0   2.015279e+09        2.015259e+09
+5     F00015            29300.0   2.964922e+09        2.964892e+09
+6     F00104            12700.0   1.277033e+09        1.277020e+09
+7     F00005            19900.0   1.984788e+09        1.984768e+09
+8     F00049            24100.0   2.408998e+09        2.408974e+09
+9     F00232            20900.0   2.105076e+09        2.105055e+09
+10    F00186            28500.0   2.856451e+09        2.856423e+09
+11    F00063            26400.0   2.636623e+09        2.636596e+09
+12    F00083            21600.0   2.154927e+09        2.154905e+09
+13    F00180            18600.0   1.861914e+09        1.861895e+09
+14    F00010            16000.0   1.605902e+09        1.605886e+09
+15    F00171            12700.0   1.283114e+09        1.283101e+09
+16    F00234            15000.0   1.498047e+09        1.498032e+09
+17    F00021            17200.0   1.745454e+09        1.745437e+09
+18    F00086            13100.0   1.319904e+09        1.319891e+09
+19    F00133            24500.0   2.487487e+09        2.487462e+09
+20    F00018            21800.0   2.175133e+09        2.175111e+09
+21    F00147            16700.0   1.682853e+09        1.682836e+09
+22    F00034            19600.0   1.969127e+09        1.969108e+09
+23    F00188            20700.0   2.073915e+09        2.073894e+09
+24    F00051            16700.0   1.695096e+09        1.695080e+09
+
+--- Running Coalition Size Analysis (Sizes: [3, 5, 8, 25]) ---
+
+[>] Analyzing size 3...
+[>] Analyzing size 5...
+[>] Analyzing size 8...
+[>] Analyzing size 25...
+[>] Coalition Size Analysis Results:
+   Size  Avg_Value_per_Farmer  ...  Avg_Shapley_Value  StdDev_Shapley_Value
+0     3          2.497367e+08  ...       2.497367e+08          6.189523e+07
+1     5          3.494264e+08  ...       3.494264e+08          5.952898e+07
+2     8          6.292046e+08  ...       6.292046e+08          7.946196e+07
+3    25          1.967075e+09  ...       1.967075e+09          1.479901e+08
+
+[4 rows x 5 columns]
+[>] Saved coalition size plot: ./logs/plots/coalition/n_farmers_25/coalition_size_analysis.png
+
+--- Running Distribution Stability Analysis (N=25) ---
+
+[!] N=25 exceeds Core check threshold (15). Skipping stability check.
