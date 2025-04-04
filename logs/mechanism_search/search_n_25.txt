@@ -1,0 +1,38 @@
+[+] Sampled 25 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv
+[+] Starting mechanism comparison across 9 values of 'market_price_per_credit'...
+Parameter Iterations:   0%|          | 0/9 [00:00<?, ?it/s]Parameter Iterations:  11%|█         | 1/9 [00:06<00:51,  6.48s/it]Parameter Iterations:  22%|██▏       | 2/9 [00:12<00:45,  6.46s/it]Parameter Iterations:  33%|███▎      | 3/9 [00:19<00:38,  6.48s/it]Parameter Iterations:  44%|████▍     | 4/9 [00:25<00:32,  6.47s/it]Parameter Iterations:  56%|█████▌    | 5/9 [00:32<00:25,  6.48s/it]Parameter Iterations:  67%|██████▋   | 6/9 [00:38<00:19,  6.48s/it]Parameter Iterations:  78%|███████▊  | 7/9 [00:45<00:12,  6.48s/it]Parameter Iterations:  89%|████████▉ | 8/9 [00:51<00:06,  6.47s/it]Parameter Iterations: 100%|██████████| 9/9 [00:58<00:00,  6.47s/it]Parameter Iterations: 100%|██████████| 9/9 [00:58<00:00,  6.47s/it]
+[>] Running Mechanisms with market_price_per_credit=1000.00 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 1000.0}
+[>] Running Mechanisms with market_price_per_credit=1262.50 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 1262.5}
+[>] Running Mechanisms with market_price_per_credit=1525.00 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 1525.0}
+[>] Running Mechanisms with market_price_per_credit=1787.50 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 1787.5}
+[>] Running Mechanisms with market_price_per_credit=2050.00 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 2050.0}
+[>] Running Mechanisms with market_price_per_credit=2312.50 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 2312.5}
+[>] Running Mechanisms with market_price_per_credit=2575.00 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 2575.0}
+[>] Running Mechanisms with market_price_per_credit=2837.50 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 2837.5}
+[>] Running Mechanisms with market_price_per_credit=3100.00 and params: {'alpha': 1.0, 'beta': 0.0, 'n_farmers_analyzed': 25, 'seed': 24004, 'buyer_demand': 15, 'market_price_per_credit': 3100.0}
+
+[+] Experiment results saved to ./data/synthetic/mechanism_comparison_n_25.csv
+
+--- Best Mechanism Analysis ---
+Criteria: Reliability (Avg IR % >= 80.0%), Max Avg Profit, Min Gini
+Avg IR % per mechanism (based on successful runs):
+mechanism_name
+Shapley Allocation       100.00
+Uniform Price Auction      0.00
+VCG Auction                6.22
+Name: ir_met_percentage, dtype: float64
+Reliable Mechanisms meeting IR threshold: ['Shapley Allocation']
+Avg Profit for reliable mechanisms:
+mechanism_name
+Shapley Allocation    20100.0
+Name: avg_farmer_profit, dtype: float64
+Mechanism 'Shapley Allocation' has highest average profit among reliable options.
+
+Best Overall Reliable Mechanism: Shapley Allocation
+Showing performance near median 'market_price_per_credit' (2050.00):
+market_price_per_credit      2050.0
+avg_farmer_profit           20100.0
+gini_coefficient           0.131582
+ir_met_percentage             100.0
+[+] Plots saved to ./logs/plots/mechanism_search
+[+] Experiment finished in 59.20 seconds.
