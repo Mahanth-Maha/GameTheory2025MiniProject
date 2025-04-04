@@ -1,0 +1,251 @@
+Farmer_ID,Farm_Size_ha,Land_Tenure_Type,Farmer_Age,Education_Level,Gender,Potential_Carbon_Credits_tCO2e,Standalone_Payoff_INR,True_Cost_per_Credit_INR,Certification_Cost_Individual_INR,Debt_Status,Water_Usage_m3,Soil_Organic_Carbon_t_per_ha,Crop_Type,Crop_Yield_t_per_ha,Market_Access,Economic_Vulnerability_Score,Previous_Coalition_Experience,Farm_Location_State,Farm_Location_District,Risk_Aversion_Coeff
+F00001,3.36,Leased,58,Primary,Male,3.1,14600.0,4400.0,8300.0,No,2829.53,0.96,Millets,4.72,Moderate,25.04,No,Kerala,6,2.25
+F00002,1.16,Leased,68,Primary,Female,2.86,20300.0,2300.0,6400.0,Yes,3589.33,2.18,Rice,2.99,Easy,23.71,Yes,Andhra Pradesh,15,3.44
+F00003,5.0,Owned,52,Higher,Female,2.15,22200.0,5800.0,6400.0,No,2646.56,2.16,Rice,3.45,Moderate,33.84,Yes,Karnataka,6,3.16
+F00004,3.75,Mixed,70,None,Female,5.96,12700.0,5700.0,7200.0,Yes,1087.29,0.63,Rice,4.95,Moderate,45.74,Yes,Karnataka,31,2.25
+F00005,1.43,Mixed,33,Higher,Male,5.1,19900.0,2000.0,4000.0,No,2273.31,0.82,Rice,7.77,Moderate,29.79,No,Karnataka,34,1.85
+F00006,3.41,Owned,21,Higher,Male,8.9,15000.0,2000.0,8900.0,No,4197.43,2.42,Rice,4.6,Moderate,33.23,No,Karnataka,10,1.82
+F00007,4.33,Owned,40,Secondary,Male,3.53,13600.0,1800.0,6100.0,No,1956.08,1.75,Rice,6.24,Easy,45.12,Yes,Telangana,8,0.15
+F00008,2.29,Mixed,30,Primary,Male,3.51,21800.0,1100.0,4400.0,No,329.73,2.09,Cotton,3.76,Moderate,27.42,Yes,Karnataka,29,3.07
+F00009,1.65,Leased,39,Secondary,Female,5.16,22000.0,1200.0,4700.0,No,3461.67,0.58,Maize,6.0,Difficult,39.89,Yes,Karnataka,37,1.61
+F00010,0.73,Owned,42,Primary,Male,5.28,16000.0,1700.0,7700.0,Yes,1987.22,1.7,Maize,5.74,Moderate,55.55,No,Kerala,42,4.19
+F00011,1.53,Owned,32,Higher,Male,2.87,21400.0,2800.0,5700.0,No,3534.15,2.9,Rice,3.47,Moderate,11.33,Yes,Tamil Nadu,16,2.36
+F00012,2.15,Owned,22,None,Male,2.24,24200.0,4700.0,6200.0,Yes,7957.9,1.91,Millets,6.11,Moderate,25.06,No,Andhra Pradesh,29,2.16
+F00013,1.56,Owned,46,Primary,Male,9.98,24900.0,2400.0,6400.0,No,558.22,2.26,Sugarcane,4.26,Easy,39.19,No,Andhra Pradesh,20,0.28
+F00014,4.49,Mixed,28,Primary,Male,6.36,15500.0,3100.0,4400.0,Yes,2876.81,1.56,Rice,3.64,Moderate,7.75,No,Telangana,14,1.64
+F00015,2.06,Owned,61,None,Male,1.97,29300.0,2000.0,5200.0,Yes,2736.83,2.31,Maize,5.87,Difficult,2.56,Yes,Andhra Pradesh,37,3.63
+F00016,1.42,Owned,23,Higher,Female,6.46,22400.0,3800.0,6400.0,Yes,4074.59,0.78,Maize,3.45,Moderate,20.45,No,Telangana,18,1.51
+F00017,0.66,Owned,22,None,Male,3.55,18900.0,1000.0,4600.0,No,3360.85,2.83,Rice,3.52,Easy,65.23,Yes,Andhra Pradesh,13,1.29
+F00018,4.68,Owned,53,None,Male,4.26,21800.0,3300.0,4700.0,No,1385.85,2.46,Sugarcane,8.7,Moderate,31.3,No,Andhra Pradesh,47,3.05
+F00019,2.24,Leased,40,Secondary,Female,0.99,17400.0,2200.0,7900.0,No,2000.03,1.37,Millets,5.15,Difficult,43.83,No,Telangana,16,1.45
+F00020,0.92,Owned,27,Secondary,Female,6.35,13900.0,1300.0,6300.0,No,1181.94,2.33,Millets,3.44,Moderate,20.64,No,Tamil Nadu,46,1.27
+F00021,7.24,Owned,21,Primary,Male,3.35,17200.0,1700.0,4700.0,Yes,2322.18,1.94,Millets,3.16,Difficult,1.92,No,Andhra Pradesh,9,4.24
+F00022,1.03,Owned,66,Primary,Male,3.21,19600.0,2500.0,7200.0,Yes,2931.61,1.45,Cotton,3.56,Moderate,11.93,Yes,Karnataka,31,3.29
+F00023,2.19,Owned,39,Primary,Male,12.15,24300.0,2900.0,4800.0,No,2194.74,2.3,Rice,4.42,Difficult,35.67,No,Karnataka,45,0.48
+F00024,1.42,Owned,28,Higher,Female,5.14,15800.0,3200.0,6400.0,No,4316.72,0.52,Sugarcane,2.55,Moderate,36.09,No,Karnataka,14,0.7
+F00025,3.25,Owned,59,None,Male,11.16,14400.0,2900.0,8200.0,Yes,3659.94,2.23,Sugarcane,5.27,Moderate,12.42,Yes,Andhra Pradesh,5,1.92
+F00026,1.23,Owned,63,Primary,Male,5.88,19600.0,2200.0,4900.0,No,8040.81,1.23,Maize,3.24,Moderate,15.87,Yes,Tamil Nadu,25,1.54
+F00027,2.0,Owned,22,Higher,Male,0.91,14300.0,1300.0,6500.0,No,6639.18,2.16,Rice,5.88,Difficult,45.0,No,Andhra Pradesh,31,2.09
+F00028,1.96,Leased,62,Secondary,Female,2.1,18200.0,2300.0,8400.0,No,3456.69,0.96,Rice,1.48,Difficult,83.87,Yes,Telangana,28,1.63
+F00029,0.67,Owned,29,Secondary,Male,2.12,17600.0,2900.0,6900.0,No,6934.3,2.61,Cotton,3.47,Moderate,40.8,No,Kerala,25,1.06
+F00030,1.21,Owned,21,Secondary,Male,3.35,15300.0,1600.0,6000.0,No,1382.64,0.58,Rice,3.86,Moderate,43.07,Yes,Telangana,6,1.56
+F00031,3.38,Owned,45,Primary,Female,5.82,22200.0,2000.0,7200.0,No,1972.18,2.27,Cotton,4.25,Moderate,25.54,Yes,Andhra Pradesh,26,1.2
+F00032,3.07,Leased,63,Higher,Female,0.66,26800.0,4400.0,8500.0,No,6649.24,2.94,Rice,2.69,Moderate,16.37,Yes,Tamil Nadu,32,1.7
+F00033,2.31,Leased,52,Primary,Male,4.51,23600.0,4800.0,7500.0,No,2189.45,0.8,Rice,5.61,Moderate,23.03,No,Telangana,35,1.22
+F00034,2.44,Leased,27,Primary,Male,12.89,19600.0,2700.0,5100.0,No,4376.71,2.65,Maize,6.28,Moderate,22.12,No,Andhra Pradesh,20,1.42
+F00035,2.97,Owned,50,Higher,Male,2.87,16100.0,2900.0,4100.0,Yes,1596.52,1.85,Maize,3.0,Easy,13.05,No,Tamil Nadu,21,0.52
+F00036,5.18,Owned,21,None,Female,3.2,18900.0,2300.0,5200.0,Yes,3040.04,2.37,Rice,2.24,Easy,35.43,No,Kerala,9,1.61
+F00037,1.18,Owned,57,Primary,Male,4.3,24800.0,1400.0,6900.0,No,250.54,2.71,Cotton,4.4,Moderate,31.71,No,Tamil Nadu,10,1.82
+F00038,3.05,Owned,54,None,Female,6.13,23200.0,4500.0,5900.0,No,4809.36,0.74,Maize,4.46,Easy,20.97,No,Tamil Nadu,6,1.41
+F00039,3.08,Mixed,23,None,Female,4.3,8500.0,800.0,5400.0,No,3616.47,1.82,Cotton,5.04,Moderate,39.77,Yes,Tamil Nadu,4,4.18
+F00040,3.36,Owned,72,Secondary,Male,1.39,19000.0,3600.0,6500.0,Yes,1037.17,2.99,Rice,5.46,Difficult,23.01,No,Tamil Nadu,31,1.87
+F00041,2.33,Owned,26,None,Female,0.81,20000.0,4100.0,8100.0,No,758.51,1.41,Cotton,3.84,Moderate,25.65,Yes,Karnataka,24,2.05
+F00042,1.63,Owned,36,Secondary,Female,6.53,16700.0,1700.0,4700.0,No,3764.06,0.99,Wheat,7.92,Moderate,18.21,Yes,Kerala,11,2.41
+F00043,1.02,Leased,28,Primary,Male,4.88,17900.0,1200.0,5000.0,No,2072.98,1.29,Millets,4.11,Moderate,42.33,No,Andhra Pradesh,33,2.69
+F00044,1.93,Mixed,46,Higher,Male,6.31,16800.0,1400.0,5900.0,Yes,3366.74,2.48,Millets,4.74,Moderate,17.36,Yes,Kerala,5,3.78
+F00045,6.7,Owned,54,Higher,Male,3.12,22200.0,2700.0,7200.0,No,1826.68,0.97,Millets,5.35,Moderate,21.25,No,Telangana,18,0.93
+F00046,2.74,Owned,60,None,Female,3.33,15000.0,3200.0,4100.0,No,4096.79,1.18,Rice,1.58,Easy,38.99,No,Telangana,5,3.49
+F00047,8.86,Leased,47,None,Male,3.12,21900.0,1900.0,7500.0,No,1174.05,0.59,Maize,6.52,Moderate,23.07,No,Karnataka,27,1.9
+F00048,4.09,Owned,65,Secondary,Female,3.21,27000.0,1300.0,5400.0,No,789.84,0.91,Rice,5.51,Difficult,14.28,No,Tamil Nadu,28,2.68
+F00049,1.1,Owned,24,Secondary,Male,1.39,24100.0,4300.0,4300.0,No,6206.38,2.88,Maize,3.32,Easy,48.18,Yes,Karnataka,3,0.85
+F00050,7.04,Owned,20,Higher,Male,5.6,27100.0,2700.0,7700.0,No,3907.69,0.5,Rice,5.63,Easy,6.57,Yes,Karnataka,36,2.06
+F00051,0.52,Leased,38,Higher,Male,5.1,16700.0,3800.0,7800.0,Yes,1785.7,2.51,Rice,3.09,Easy,40.15,Yes,Tamil Nadu,47,1.31
+F00052,0.21,Owned,61,Primary,Male,0.46,20800.0,2000.0,5300.0,No,2344.39,2.36,Rice,5.06,Easy,44.07,No,Telangana,14,1.39
+F00053,1.96,Leased,63,Primary,Male,2.51,24100.0,2700.0,8500.0,Yes,2357.85,2.0,Cotton,6.53,Moderate,25.76,No,Kerala,10,2.95
+F00054,0.87,Leased,43,Primary,Male,4.97,21900.0,1600.0,7100.0,Yes,4015.31,0.85,Millets,6.25,Easy,49.05,No,Kerala,38,2.1
+F00055,8.49,Leased,23,Primary,Female,4.36,21300.0,2200.0,8800.0,No,5101.98,1.81,Maize,3.82,Difficult,19.99,No,Kerala,40,2.57
+F00056,5.8,Mixed,49,None,Male,2.15,16900.0,1400.0,4400.0,No,1445.71,2.64,Sugarcane,5.72,Moderate,41.01,No,Telangana,47,3.7
+F00057,0.53,Owned,27,Primary,Male,10.13,24600.0,1800.0,5100.0,Yes,3150.34,0.96,Sugarcane,3.01,Moderate,38.07,Yes,Andhra Pradesh,11,1.12
+F00058,4.48,Leased,34,Higher,Female,6.96,23100.0,2900.0,6800.0,No,1138.06,1.57,Wheat,4.07,Easy,49.44,No,Andhra Pradesh,9,1.85
+F00059,1.42,Leased,46,Higher,Male,3.2,25000.0,3000.0,7100.0,No,3921.18,1.51,Wheat,4.71,Moderate,11.13,No,Tamil Nadu,6,1.33
+F00060,7.67,Owned,53,Secondary,Male,6.71,19300.0,3100.0,6100.0,Yes,1138.48,2.97,Sugarcane,3.09,Difficult,42.84,Yes,Tamil Nadu,29,1.62
+F00061,1.79,Mixed,41,Primary,Male,3.28,19500.0,1700.0,8200.0,No,1916.48,1.9,Rice,3.5,Difficult,38.68,Yes,Karnataka,3,3.03
+F00062,2.07,Owned,44,Primary,Male,3.14,18100.0,1200.0,8200.0,Yes,2989.31,2.09,Sugarcane,6.58,Moderate,19.11,No,Kerala,23,0.75
+F00063,7.71,Owned,42,None,Male,4.48,26400.0,2300.0,7600.0,No,3250.47,2.42,Wheat,3.62,Easy,28.83,No,Telangana,34,2.5
+F00064,2.65,Owned,56,Higher,Male,8.03,16900.0,3900.0,6100.0,Yes,4304.7,1.99,Sugarcane,4.58,Moderate,45.85,Yes,Andhra Pradesh,9,1.8
+F00065,5.37,Leased,36,None,Female,9.84,23100.0,3600.0,6500.0,No,886.79,1.22,Cotton,5.87,Difficult,41.03,Yes,Telangana,20,1.82
+F00066,4.62,Owned,53,Secondary,Female,1.12,21600.0,3300.0,8500.0,Yes,1254.91,0.81,Rice,6.03,Moderate,4.62,Yes,Karnataka,6,1.08
+F00067,2.53,Owned,33,Higher,Female,4.26,16200.0,4500.0,4600.0,No,1169.29,1.04,Rice,5.62,Moderate,2.38,No,Andhra Pradesh,43,1.81
+F00068,4.92,Owned,48,None,Male,10.29,25900.0,4300.0,8700.0,No,1491.76,2.01,Rice,4.48,Easy,21.1,Yes,Telangana,4,1.17
+F00069,0.46,Leased,22,Primary,Male,2.78,17300.0,1100.0,5200.0,Yes,833.68,2.33,Rice,6.2,Moderate,25.82,Yes,Tamil Nadu,17,2.29
+F00070,0.64,Leased,43,Primary,Male,5.23,27300.0,4300.0,4100.0,No,6848.58,2.72,Rice,4.89,Moderate,43.78,No,Kerala,26,0.74
+F00071,3.83,Leased,28,Secondary,Female,2.03,15500.0,4300.0,5900.0,Yes,2753.56,1.66,Rice,5.96,Easy,26.68,No,Kerala,41,1.01
+F00072,3.86,Mixed,22,Secondary,Male,9.74,19000.0,2900.0,7400.0,Yes,796.2,0.66,Sugarcane,3.62,Moderate,17.59,No,Kerala,7,2.98
+F00073,1.59,Owned,22,None,Male,5.87,7900.0,4500.0,6100.0,No,6516.56,2.87,Sugarcane,3.26,Easy,44.65,No,Telangana,41,0.82
+F00074,3.62,Leased,55,None,Female,5.4,28800.0,2900.0,4000.0,Yes,1371.77,2.46,Rice,5.4,Difficult,21.13,Yes,Telangana,8,2.98
+F00075,4.59,Owned,20,Higher,Female,4.01,16400.0,3400.0,5100.0,Yes,5330.43,2.5,Maize,3.27,Easy,35.65,No,Telangana,31,1.16
+F00076,1.88,Leased,33,Primary,Male,2.76,27400.0,1100.0,5500.0,No,4397.98,2.76,Rice,5.33,Moderate,20.89,Yes,Kerala,5,2.63
+F00077,6.01,Owned,45,Higher,Male,1.89,17300.0,5500.0,8000.0,No,6074.35,2.18,Rice,4.72,Difficult,45.53,No,Tamil Nadu,1,1.56
+F00078,4.71,Leased,73,Primary,Male,2.18,13400.0,2500.0,7400.0,Yes,8997.71,0.77,Rice,3.52,Easy,16.55,No,Andhra Pradesh,9,1.02
+F00079,0.69,Owned,23,Secondary,Male,1.33,32000.0,1900.0,4500.0,No,1856.75,2.92,Maize,4.27,Moderate,19.36,Yes,Tamil Nadu,16,1.4
+F00080,8.54,Owned,34,Primary,Male,6.73,23800.0,2100.0,4100.0,Yes,2183.64,2.07,Maize,3.9,Moderate,18.29,No,Karnataka,36,3.61
+F00081,3.43,Owned,48,None,Female,1.71,25000.0,2700.0,8600.0,No,805.63,2.3,Maize,6.15,Moderate,36.05,No,Tamil Nadu,24,1.01
+F00082,2.36,Owned,26,Secondary,Male,2.51,20200.0,4100.0,4700.0,No,3197.08,2.14,Maize,7.66,Moderate,30.19,No,Telangana,13,2.92
+F00083,0.95,Owned,53,None,Male,9.3,21600.0,2800.0,7200.0,No,1493.88,1.75,Maize,5.38,Moderate,37.64,No,Andhra Pradesh,32,2.23
+F00084,1.11,Leased,60,Secondary,Female,7.19,12200.0,2800.0,8100.0,Yes,5575.38,1.88,Maize,5.55,Easy,25.49,No,Tamil Nadu,26,2.7
+F00085,8.86,Owned,23,None,Male,3.79,19300.0,4700.0,7800.0,No,5165.02,1.55,Sugarcane,5.98,Easy,64.27,No,Tamil Nadu,27,2.32
+F00086,1.78,Owned,52,Secondary,Male,6.9,13100.0,1900.0,7800.0,Yes,3418.78,1.63,Millets,7.28,Easy,33.94,No,Kerala,35,0.79
+F00087,2.71,Owned,57,None,Male,8.91,18700.0,3700.0,8600.0,Yes,5066.94,1.17,Rice,4.32,Easy,20.75,No,Tamil Nadu,22,2.41
+F00088,2.22,Mixed,32,Primary,Male,3.01,16200.0,4800.0,7500.0,Yes,2814.64,2.22,Rice,4.8,Moderate,31.5,No,Tamil Nadu,27,2.83
+F00089,4.0,Owned,30,Secondary,Female,10.39,14800.0,5400.0,8400.0,Yes,3659.23,3.0,Cotton,3.85,Difficult,43.38,No,Tamil Nadu,49,3.65
+F00090,0.96,Leased,52,Secondary,Male,4.62,23100.0,2600.0,6100.0,Yes,12582.23,2.99,Rice,3.48,Moderate,15.35,No,Telangana,48,3.28
+F00091,4.49,Mixed,57,Secondary,Male,7.88,23800.0,3000.0,7700.0,No,2560.07,0.89,Wheat,2.81,Moderate,28.81,Yes,Tamil Nadu,21,1.51
+F00092,2.48,Owned,23,Primary,Male,2.88,23300.0,2000.0,7900.0,Yes,974.19,2.09,Rice,2.72,Moderate,34.23,No,Telangana,34,4.13
+F00093,4.17,Mixed,44,Primary,Female,1.63,19300.0,3000.0,5600.0,Yes,2190.97,0.73,Rice,6.37,Difficult,4.57,Yes,Karnataka,17,1.8
+F00094,3.72,Owned,63,Primary,Male,1.55,20800.0,3300.0,8400.0,No,1027.53,1.5,Rice,5.48,Difficult,20.95,No,Karnataka,16,3.44
+F00095,0.59,Leased,40,Higher,Male,4.65,18200.0,1700.0,4700.0,Yes,1910.34,2.53,Rice,5.28,Easy,15.05,No,Tamil Nadu,42,1.31
+F00096,1.46,Leased,24,Primary,Male,0.67,14400.0,3200.0,4300.0,Yes,3325.45,1.71,Wheat,3.89,Easy,47.61,No,Tamil Nadu,39,1.31
+F00097,0.65,Owned,30,Secondary,Male,5.45,23300.0,4300.0,4400.0,No,4566.93,1.53,Wheat,6.29,Easy,21.29,No,Tamil Nadu,47,2.98
+F00098,1.23,Owned,62,None,Male,3.94,18700.0,1400.0,5100.0,Yes,655.88,2.17,Rice,5.27,Moderate,21.38,Yes,Karnataka,43,0.97
+F00099,2.96,Mixed,54,Higher,Male,2.02,27000.0,2300.0,4200.0,No,2011.77,2.48,Millets,4.19,Moderate,37.71,Yes,Karnataka,28,3.61
+F00100,2.37,Owned,73,Secondary,Female,5.88,18600.0,2800.0,6200.0,No,5694.91,1.14,Maize,4.95,Moderate,10.77,Yes,Karnataka,5,2.28
+F00101,5.94,Owned,28,None,Male,2.03,12000.0,5500.0,5700.0,Yes,530.82,2.19,Sugarcane,3.97,Easy,23.75,No,Kerala,17,2.55
+F00102,3.1,Owned,50,Higher,Male,6.5,13100.0,4500.0,6100.0,Yes,4642.71,0.86,Wheat,3.89,Moderate,49.63,No,Tamil Nadu,39,3.86
+F00103,2.22,Leased,41,None,Male,7.97,22500.0,1900.0,8700.0,No,1501.99,1.04,Cotton,6.84,Moderate,49.47,No,Telangana,33,1.11
+F00104,2.75,Leased,52,None,Male,1.3,12700.0,1800.0,8200.0,No,8192.05,1.32,Rice,5.36,Easy,52.64,No,Tamil Nadu,25,1.85
+F00105,0.83,Owned,42,Primary,Male,2.02,19600.0,1300.0,7600.0,No,6354.73,2.53,Rice,6.02,Moderate,24.62,No,Tamil Nadu,49,1.24
+F00106,3.86,Owned,48,None,Female,6.21,24900.0,2900.0,5500.0,Yes,2792.23,0.79,Rice,3.93,Moderate,53.15,No,Andhra Pradesh,22,1.35
+F00107,2.94,Mixed,68,Primary,Male,1.71,21700.0,2100.0,5100.0,No,1128.58,1.76,Sugarcane,5.32,Easy,24.89,No,Tamil Nadu,49,1.3
+F00108,1.07,Owned,46,Primary,Female,6.56,22700.0,3300.0,6100.0,Yes,1069.09,0.55,Rice,1.61,Difficult,31.05,No,Kerala,25,2.2
+F00109,1.15,Owned,24,None,Female,1.93,12200.0,1800.0,7800.0,No,2763.96,1.86,Cotton,3.86,Moderate,32.25,No,Karnataka,37,1.38
+F00110,2.29,Mixed,39,None,Male,4.23,27500.0,2400.0,4300.0,Yes,1499.28,1.93,Cotton,5.67,Moderate,42.57,Yes,Karnataka,15,4.37
+F00111,4.24,Owned,55,Secondary,Male,11.64,18700.0,2600.0,6000.0,No,5518.24,1.92,Wheat,5.89,Easy,39.97,Yes,Karnataka,16,0.44
+F00112,1.76,Owned,61,Secondary,Male,1.51,28100.0,5700.0,8500.0,Yes,3726.8,1.65,Rice,5.34,Easy,29.73,Yes,Kerala,33,2.36
+F00113,3.27,Leased,25,Primary,Male,1.19,14800.0,2000.0,4500.0,Yes,9460.7,1.66,Rice,3.26,Moderate,64.59,No,Telangana,22,2.09
+F00114,2.64,Owned,23,Secondary,Male,4.11,22800.0,9200.0,7100.0,No,1371.69,0.96,Wheat,5.61,Moderate,5.23,Yes,Telangana,5,4.76
+F00115,4.87,Mixed,57,Primary,Male,5.8,12500.0,4200.0,4200.0,Yes,2900.74,1.32,Maize,7.73,Moderate,29.9,Yes,Kerala,13,1.35
+F00116,1.17,Mixed,40,Primary,Male,7.68,15300.0,3200.0,6000.0,Yes,2554.27,1.61,Wheat,5.14,Moderate,24.69,No,Telangana,14,3.66
+F00117,1.85,Owned,45,Higher,Female,6.46,17800.0,1900.0,6000.0,No,2845.24,2.6,Cotton,3.34,Easy,3.29,No,Karnataka,35,2.85
+F00118,3.18,Mixed,21,Secondary,Male,2.2,23100.0,3200.0,6400.0,No,746.48,1.98,Cotton,7.44,Moderate,26.29,Yes,Tamil Nadu,43,2.83
+F00119,5.37,Owned,53,Secondary,Male,1.93,20000.0,2100.0,8000.0,No,8227.86,2.75,Wheat,4.0,Difficult,9.53,Yes,Kerala,33,1.03
+F00120,1.93,Leased,62,Primary,Female,5.39,13000.0,4300.0,7600.0,No,4128.04,2.2,Maize,6.67,Moderate,31.72,No,Tamil Nadu,22,0.32
+F00121,3.24,Owned,41,Higher,Male,2.32,20700.0,1600.0,8500.0,Yes,879.13,2.47,Sugarcane,4.41,Moderate,16.25,No,Tamil Nadu,47,1.62
+F00122,7.98,Owned,50,Primary,Male,1.99,14000.0,4900.0,4700.0,No,2079.51,0.89,Cotton,2.36,Moderate,53.67,No,Andhra Pradesh,16,1.4
+F00123,5.55,Mixed,21,None,Male,3.84,24500.0,2700.0,6900.0,Yes,6627.71,0.99,Maize,3.63,Easy,36.08,Yes,Kerala,35,2.21
+F00124,2.99,Owned,49,Primary,Female,1.93,18200.0,4400.0,6900.0,No,4982.21,2.08,Millets,4.54,Moderate,31.29,No,Tamil Nadu,24,1.91
+F00125,2.48,Owned,52,Primary,Male,3.35,14600.0,5400.0,6800.0,Yes,1515.11,2.35,Sugarcane,5.07,Difficult,9.35,No,Telangana,24,2.19
+F00126,4.16,Owned,29,None,Male,12.33,21300.0,4700.0,6200.0,No,2373.58,2.52,Maize,2.69,Easy,52.18,No,Tamil Nadu,20,1.67
+F00127,6.19,Owned,34,Higher,Male,9.24,21000.0,3100.0,7000.0,No,5682.59,2.75,Cotton,3.2,Moderate,82.12,No,Kerala,1,3.44
+F00128,8.97,Leased,56,Secondary,Male,2.42,31700.0,2700.0,5800.0,Yes,3620.66,2.45,Wheat,5.34,Moderate,42.47,No,Karnataka,27,1.26
+F00129,3.99,Owned,34,Secondary,Male,8.42,26500.0,1700.0,8900.0,Yes,902.12,2.78,Cotton,3.85,Moderate,41.03,No,Tamil Nadu,29,1.96
+F00130,3.12,Leased,64,Primary,Male,8.43,22400.0,1400.0,6300.0,No,2748.51,1.13,Rice,4.79,Easy,24.24,No,Telangana,8,2.85
+F00131,8.7,Owned,40,Secondary,Female,1.85,14000.0,2500.0,5800.0,Yes,4448.74,2.55,Rice,5.81,Moderate,10.17,Yes,Telangana,36,2.81
+F00132,1.93,Owned,34,Secondary,Male,3.68,20200.0,2200.0,5000.0,No,5270.87,0.78,Rice,3.68,Moderate,32.52,Yes,Tamil Nadu,30,2.45
+F00133,1.06,Mixed,69,Primary,Female,0.68,24500.0,4000.0,4700.0,No,3637.26,1.51,Wheat,6.64,Easy,27.68,Yes,Telangana,33,2.76
+F00134,0.9,Owned,60,Primary,Male,3.88,17700.0,3400.0,6300.0,No,2113.28,2.4,Rice,6.05,Easy,5.68,No,Karnataka,25,3.74
+F00135,0.37,Owned,63,None,Female,5.76,19100.0,2800.0,7000.0,No,2186.36,1.77,Rice,3.41,Easy,39.37,No,Karnataka,2,0.83
+F00136,3.43,Owned,45,Secondary,Male,3.24,20900.0,3500.0,5900.0,Yes,1199.45,2.67,Rice,3.6,Difficult,15.75,No,Andhra Pradesh,2,1.09
+F00137,1.42,Leased,27,Secondary,Male,7.11,11800.0,4300.0,6300.0,Yes,2577.9,1.61,Cotton,3.23,Moderate,15.6,No,Tamil Nadu,4,3.13
+F00138,1.47,Leased,26,Primary,Male,7.48,26400.0,2800.0,5000.0,No,931.43,2.22,Millets,7.67,Moderate,32.3,Yes,Karnataka,47,3.41
+F00139,2.01,Owned,55,Primary,Male,4.85,16100.0,2600.0,7000.0,No,3519.34,2.87,Maize,5.42,Moderate,39.27,No,Tamil Nadu,32,1.58
+F00140,3.92,Owned,56,Higher,Male,0.91,20100.0,2200.0,5200.0,No,2713.23,1.49,Cotton,1.84,Easy,33.4,No,Kerala,1,1.58
+F00141,3.95,Mixed,55,Primary,Male,3.57,20800.0,2300.0,8700.0,Yes,9142.63,0.6,Maize,2.12,Difficult,51.77,Yes,Tamil Nadu,20,1.1
+F00142,3.06,Owned,26,Primary,Male,2.09,19300.0,2300.0,8800.0,Yes,6782.32,1.07,Cotton,4.84,Easy,45.36,Yes,Telangana,11,1.15
+F00143,1.68,Mixed,26,Primary,Male,3.63,17000.0,4400.0,4300.0,No,5008.83,1.52,Sugarcane,3.08,Easy,21.8,No,Karnataka,25,0.67
+F00144,2.77,Owned,29,None,Male,2.75,24800.0,2900.0,6900.0,No,2124.38,0.9,Rice,4.59,Moderate,19.41,Yes,Telangana,36,3.32
+F00145,8.51,Owned,37,Secondary,Male,5.38,13700.0,1800.0,4400.0,Yes,2327.23,1.04,Millets,5.13,Moderate,27.98,No,Tamil Nadu,40,3.66
+F00146,0.18,Owned,29,Primary,Male,3.56,23000.0,4200.0,5100.0,Yes,7013.73,1.69,Cotton,5.43,Moderate,19.86,Yes,Andhra Pradesh,32,2.48
+F00147,0.89,Owned,46,Primary,Male,4.39,16700.0,1900.0,4800.0,Yes,1165.75,1.59,Millets,2.83,Moderate,39.68,No,Karnataka,7,4.18
+F00148,3.47,Leased,41,None,Male,2.83,29800.0,900.0,4900.0,No,398.55,2.64,Sugarcane,5.43,Easy,37.51,No,Telangana,34,3.11
+F00149,1.78,Leased,24,None,Male,2.73,20300.0,4400.0,7800.0,No,2455.01,0.82,Cotton,3.89,Moderate,60.26,No,Telangana,47,3.99
+F00150,3.02,Owned,50,Primary,Male,4.77,17800.0,2700.0,9000.0,No,3879.98,1.31,Maize,4.12,Easy,44.94,No,Tamil Nadu,6,0.94
+F00151,3.55,Owned,22,None,Male,4.43,19700.0,3700.0,6100.0,No,3908.42,2.45,Millets,5.94,Moderate,19.28,No,Karnataka,18,1.28
+F00152,9.81,Leased,50,Primary,Female,8.07,23900.0,3800.0,6100.0,Yes,1719.13,0.68,Rice,4.45,Easy,6.82,No,Karnataka,42,1.33
+F00153,1.64,Owned,72,Primary,Male,4.42,20500.0,1600.0,5800.0,No,1955.77,1.21,Wheat,3.25,Easy,16.65,No,Telangana,2,1.9
+F00154,1.28,Owned,64,None,Female,11.36,23900.0,3400.0,7400.0,Yes,545.19,1.82,Wheat,8.36,Moderate,12.7,No,Kerala,32,1.54
+F00155,1.25,Owned,36,Primary,Male,2.51,24000.0,3100.0,8500.0,Yes,848.54,0.53,Rice,3.45,Moderate,56.12,No,Tamil Nadu,12,1.48
+F00156,3.06,Owned,23,Secondary,Female,4.79,16500.0,3300.0,6200.0,No,4758.52,1.31,Rice,3.98,Moderate,8.73,No,Tamil Nadu,2,2.51
+F00157,1.13,Owned,48,Primary,Female,3.54,25500.0,1800.0,7300.0,Yes,2450.92,0.7,Rice,2.54,Moderate,30.6,No,Kerala,23,1.96
+F00158,5.12,Owned,58,Secondary,Male,4.35,18000.0,1800.0,8100.0,Yes,4075.13,1.33,Rice,4.02,Moderate,20.84,No,Andhra Pradesh,8,1.41
+F00159,3.95,Leased,42,None,Male,8.3,5000.0,1900.0,5800.0,No,693.67,2.11,Rice,6.02,Easy,36.39,No,Telangana,32,2.52
+F00160,4.91,Owned,41,Higher,Male,6.96,21700.0,2000.0,6700.0,Yes,2417.86,2.53,Millets,7.03,Easy,51.24,No,Karnataka,6,1.61
+F00161,7.61,Owned,22,Primary,Male,4.71,16300.0,1900.0,5800.0,No,91.36,1.13,Wheat,7.22,Easy,17.05,Yes,Telangana,3,1.58
+F00162,3.9,Owned,67,None,Male,1.13,7800.0,2700.0,7800.0,No,6933.4,2.46,Maize,3.25,Moderate,33.9,No,Andhra Pradesh,17,4.53
+F00163,0.97,Owned,62,Primary,Male,2.69,13800.0,3600.0,6700.0,No,1459.16,2.73,Cotton,4.55,Moderate,11.51,No,Kerala,30,1.45
+F00164,1.53,Owned,26,Secondary,Male,2.59,19700.0,800.0,6100.0,No,2026.66,0.85,Wheat,4.6,Easy,66.0,Yes,Tamil Nadu,37,3.33
+F00165,2.88,Leased,69,Primary,Male,10.73,33300.0,1500.0,6700.0,No,2350.69,2.67,Rice,4.72,Difficult,39.66,No,Andhra Pradesh,14,0.35
+F00166,4.75,Leased,38,Primary,Male,3.14,21100.0,3100.0,5000.0,No,1493.39,1.61,Sugarcane,6.16,Easy,6.12,No,Tamil Nadu,40,3.35
+F00167,1.74,Owned,47,Primary,Female,1.11,21800.0,1200.0,8800.0,Yes,9732.45,2.91,Rice,6.15,Moderate,8.12,Yes,Telangana,17,1.2
+F00168,1.02,Leased,64,Primary,Male,12.84,21700.0,4100.0,5500.0,No,5421.78,2.3,Sugarcane,5.55,Easy,35.22,Yes,Andhra Pradesh,1,1.18
+F00169,0.57,Owned,62,Secondary,Male,4.19,19200.0,3900.0,5700.0,No,7504.88,2.96,Cotton,5.79,Moderate,24.26,No,Andhra Pradesh,14,3.05
+F00170,8.43,Leased,22,Primary,Female,1.38,13500.0,3300.0,8900.0,No,3723.08,1.3,Maize,7.42,Difficult,30.15,Yes,Telangana,15,0.52
+F00171,1.01,Owned,49,Secondary,Male,1.7,12700.0,3400.0,8300.0,Yes,1988.02,2.92,Rice,4.07,Moderate,37.99,No,Tamil Nadu,5,3.69
+F00172,4.87,Owned,66,None,Female,8.24,15400.0,2200.0,9000.0,No,2465.13,0.95,Wheat,1.89,Moderate,23.14,Yes,Telangana,14,0.95
+F00173,0.92,Leased,50,Primary,Male,1.28,19900.0,2900.0,6000.0,Yes,524.03,2.47,Sugarcane,3.77,Moderate,38.35,Yes,Andhra Pradesh,33,4.08
+F00174,8.88,Owned,25,None,Male,6.5,27600.0,2100.0,4800.0,Yes,6497.82,2.82,Rice,5.59,Difficult,15.55,No,Telangana,36,0.53
+F00175,3.35,Owned,43,Primary,Male,2.93,17200.0,4300.0,4900.0,No,1520.16,0.57,Sugarcane,5.02,Moderate,6.35,No,Tamil Nadu,3,4.0
+F00176,6.78,Owned,20,Secondary,Male,3.47,13700.0,1800.0,8200.0,Yes,2089.68,2.12,Millets,4.95,Easy,39.83,Yes,Andhra Pradesh,29,2.73
+F00177,1.76,Owned,43,Primary,Female,3.48,15600.0,2000.0,4100.0,Yes,3415.09,1.54,Millets,4.47,Moderate,31.23,No,Andhra Pradesh,20,0.77
+F00178,0.77,Owned,36,None,Male,5.02,21500.0,2100.0,6100.0,Yes,6300.37,1.52,Sugarcane,5.8,Moderate,6.36,No,Tamil Nadu,11,3.96
+F00179,3.78,Owned,34,None,Male,3.71,19500.0,6000.0,6700.0,Yes,1437.93,1.78,Rice,3.91,Moderate,31.64,No,Andhra Pradesh,12,1.82
+F00180,1.9,Owned,46,Primary,Male,7.4,18600.0,2100.0,7900.0,Yes,3133.77,0.88,Maize,4.11,Moderate,12.11,Yes,Telangana,47,3.36
+F00181,2.51,Owned,42,Primary,Female,3.42,20900.0,6400.0,5100.0,Yes,5343.98,0.86,Cotton,5.62,Easy,25.18,No,Andhra Pradesh,16,1.49
+F00182,1.88,Mixed,61,None,Female,5.03,22500.0,1800.0,7400.0,Yes,15349.45,0.73,Sugarcane,2.72,Easy,20.58,Yes,Telangana,48,2.07
+F00183,3.68,Owned,31,Secondary,Male,6.23,15500.0,2200.0,5800.0,Yes,11334.43,2.46,Sugarcane,5.65,Moderate,44.09,No,Tamil Nadu,1,1.27
+F00184,4.52,Owned,29,Secondary,Male,7.98,31300.0,4000.0,7400.0,Yes,3977.07,2.71,Sugarcane,6.71,Moderate,31.75,Yes,Andhra Pradesh,7,0.74
+F00185,1.48,Owned,60,Secondary,Male,6.46,8300.0,2300.0,6000.0,Yes,1073.94,1.77,Maize,5.96,Difficult,33.83,No,Telangana,33,2.21
+F00186,0.33,Owned,66,None,Female,6.87,28500.0,1700.0,7200.0,No,6431.64,2.55,Maize,5.07,Moderate,15.69,No,Tamil Nadu,48,2.46
+F00187,1.59,Leased,34,Primary,Male,3.83,22500.0,7600.0,6800.0,No,5650.53,1.06,Millets,5.42,Difficult,20.9,No,Kerala,17,3.86
+F00188,3.03,Leased,46,None,Male,5.66,20700.0,1500.0,7800.0,Yes,3899.19,2.69,Cotton,3.18,Difficult,32.19,Yes,Andhra Pradesh,14,3.05
+F00189,3.63,Owned,57,Higher,Male,3.29,20000.0,9000.0,7600.0,Yes,8936.96,0.85,Rice,3.1,Moderate,6.14,No,Telangana,24,1.69
+F00190,2.08,Mixed,58,Higher,Female,1.42,12800.0,2300.0,6000.0,No,2126.64,2.84,Maize,3.94,Moderate,32.0,Yes,Tamil Nadu,24,1.52
+F00191,0.83,Owned,64,None,Female,6.45,21400.0,2000.0,6400.0,Yes,3064.31,2.38,Sugarcane,4.22,Moderate,47.02,No,Andhra Pradesh,27,2.48
+F00192,2.28,Owned,61,Higher,Male,1.89,19500.0,3600.0,5000.0,Yes,4348.66,2.53,Cotton,2.57,Moderate,5.72,No,Kerala,8,0.49
+F00193,1.63,Owned,21,Primary,Female,1.72,16200.0,2900.0,7500.0,No,1493.1,2.68,Maize,1.98,Moderate,62.11,No,Tamil Nadu,19,2.51
+F00194,2.37,Mixed,74,None,Male,1.62,27900.0,3200.0,4500.0,No,2233.04,0.51,Sugarcane,5.41,Moderate,30.21,Yes,Tamil Nadu,33,1.88
+F00195,0.71,Owned,26,Secondary,Female,2.73,17800.0,4900.0,8900.0,No,3358.84,0.63,Maize,4.05,Easy,44.08,No,Kerala,2,2.29
+F00196,5.23,Leased,46,Secondary,Male,3.64,20800.0,2000.0,7200.0,Yes,6719.49,2.49,Wheat,2.99,Moderate,40.83,Yes,Karnataka,44,2.59
+F00197,4.25,Owned,22,None,Female,1.34,25900.0,7900.0,4100.0,Yes,3766.51,0.97,Rice,7.19,Easy,11.58,Yes,Andhra Pradesh,26,4.11
+F00198,1.83,Owned,57,Secondary,Female,1.28,22700.0,2100.0,6700.0,No,4865.06,2.98,Millets,3.26,Moderate,55.9,No,Karnataka,7,2.13
+F00199,3.64,Owned,46,Secondary,Male,2.91,17000.0,4500.0,8300.0,No,7221.19,2.0,Millets,6.47,Moderate,67.32,No,Karnataka,2,3.29
+F00200,4.38,Leased,62,Secondary,Male,3.62,23900.0,2800.0,4700.0,No,3142.83,0.78,Rice,5.53,Moderate,58.0,No,Tamil Nadu,46,2.06
+F00201,3.16,Owned,37,None,Male,2.59,24000.0,5700.0,8300.0,No,6753.95,0.76,Sugarcane,7.36,Moderate,18.73,Yes,Karnataka,24,2.11
+F00202,0.61,Owned,35,Primary,Male,8.49,23600.0,1300.0,7800.0,No,1439.93,0.77,Sugarcane,5.05,Moderate,3.38,No,Telangana,20,0.97
+F00203,4.22,Mixed,43,Primary,Female,1.33,20700.0,2600.0,4200.0,No,6070.85,1.56,Rice,5.34,Moderate,55.16,No,Andhra Pradesh,24,4.58
+F00204,8.0,Mixed,64,Secondary,Male,2.52,25000.0,5300.0,8900.0,Yes,4524.63,2.98,Maize,5.25,Moderate,18.75,No,Karnataka,19,2.72
+F00205,5.51,Owned,26,Higher,Male,5.52,17600.0,3200.0,6300.0,Yes,2028.94,1.07,Rice,5.17,Easy,40.51,Yes,Tamil Nadu,11,0.59
+F00206,1.41,Leased,36,Primary,Male,3.81,21100.0,2700.0,8100.0,Yes,6530.95,1.59,Wheat,3.1,Moderate,9.55,No,Karnataka,17,2.36
+F00207,5.42,Leased,47,Primary,Male,3.12,21600.0,4700.0,6300.0,No,2014.15,1.48,Sugarcane,3.65,Moderate,28.03,No,Tamil Nadu,16,1.64
+F00208,4.69,Owned,29,Primary,Male,2.71,29900.0,3500.0,8700.0,Yes,305.3,1.3,Millets,2.94,Difficult,9.73,Yes,Telangana,26,1.34
+F00209,2.25,Owned,26,Primary,Female,4.64,29200.0,5800.0,7000.0,No,3619.3,1.85,Sugarcane,4.76,Moderate,7.46,No,Karnataka,14,2.3
+F00210,6.66,Owned,62,Secondary,Female,5.57,26200.0,2400.0,4800.0,No,3464.46,1.84,Wheat,4.21,Moderate,15.35,No,Telangana,33,1.63
+F00211,3.95,Leased,25,None,Female,2.3,25000.0,1500.0,8300.0,No,2641.59,1.23,Maize,6.79,Moderate,5.53,No,Andhra Pradesh,12,0.91
+F00212,7.34,Leased,49,None,Male,4.59,20100.0,1100.0,5200.0,Yes,1773.23,1.95,Rice,3.58,Moderate,33.38,No,Tamil Nadu,7,2.58
+F00213,0.42,Mixed,40,Secondary,Male,7.35,24000.0,800.0,6700.0,No,5426.85,1.07,Maize,1.51,Easy,42.73,No,Telangana,46,1.48
+F00214,0.94,Mixed,61,Primary,Male,5.61,23700.0,4000.0,4600.0,Yes,1183.53,0.86,Sugarcane,6.66,Easy,8.78,No,Karnataka,23,0.85
+F00215,1.69,Owned,63,Primary,Female,7.25,17300.0,2700.0,5100.0,No,1610.19,1.56,Sugarcane,4.49,Moderate,8.97,No,Karnataka,20,1.42
+F00216,3.36,Mixed,57,Primary,Male,7.76,22900.0,2900.0,6700.0,Yes,3741.09,2.35,Millets,6.31,Moderate,66.23,No,Karnataka,19,1.43
+F00217,3.28,Owned,42,Secondary,Male,3.91,14800.0,2900.0,9000.0,Yes,3289.87,2.76,Wheat,3.88,Easy,15.58,Yes,Telangana,30,1.17
+F00218,2.98,Owned,52,Primary,Male,4.09,21800.0,1800.0,7100.0,Yes,1105.78,1.22,Rice,4.57,Moderate,5.48,Yes,Kerala,38,1.99
+F00219,4.0,Leased,55,Primary,Male,1.05,16900.0,3400.0,7600.0,No,3593.86,0.99,Sugarcane,4.88,Moderate,26.94,No,Karnataka,19,3.09
+F00220,2.64,Owned,22,Higher,Female,6.4,22300.0,2700.0,8600.0,Yes,2602.76,2.55,Rice,5.01,Difficult,17.48,No,Tamil Nadu,49,2.62
+F00221,3.54,Owned,56,Secondary,Male,4.66,30900.0,2400.0,4700.0,Yes,1278.08,0.77,Rice,4.95,Moderate,39.19,No,Telangana,13,3.23
+F00222,3.14,Owned,39,Primary,Female,5.5,28900.0,4800.0,4300.0,No,2674.9,2.85,Rice,4.21,Moderate,36.14,No,Karnataka,16,1.97
+F00223,2.41,Leased,44,None,Male,9.89,20700.0,6300.0,7200.0,Yes,5833.32,2.33,Cotton,5.08,Easy,65.95,No,Telangana,29,2.72
+F00224,2.05,Leased,62,Secondary,Male,13.08,23200.0,3600.0,7300.0,Yes,1703.45,1.62,Maize,4.37,Moderate,12.9,Yes,Andhra Pradesh,38,1.36
+F00225,1.45,Leased,24,Primary,Male,5.74,13100.0,1400.0,7100.0,Yes,3455.79,1.13,Millets,6.21,Easy,18.75,Yes,Telangana,38,2.92
+F00226,0.49,Leased,57,Primary,Female,4.37,23400.0,1600.0,7800.0,No,2128.81,2.72,Maize,3.85,Moderate,23.81,Yes,Andhra Pradesh,47,2.21
+F00227,1.86,Owned,27,Secondary,Female,3.0,11100.0,4900.0,8800.0,No,5581.36,2.23,Cotton,4.01,Easy,8.34,No,Karnataka,20,2.28
+F00228,9.54,Leased,54,Primary,Male,2.79,20500.0,1600.0,8900.0,No,5899.54,1.43,Maize,6.52,Difficult,18.77,No,Kerala,13,0.69
+F00229,1.5,Owned,35,Secondary,Male,2.49,11100.0,2700.0,4300.0,No,3402.17,2.13,Rice,4.38,Moderate,43.53,Yes,Telangana,25,2.37
+F00230,5.31,Leased,68,None,Female,9.88,27100.0,3900.0,5200.0,No,3874.11,1.27,Maize,3.97,Moderate,43.78,Yes,Telangana,45,2.13
+F00231,4.32,Owned,28,None,Male,4.15,16900.0,3200.0,4400.0,Yes,2226.86,1.08,Wheat,5.33,Easy,36.18,No,Tamil Nadu,32,2.58
+F00232,4.16,Owned,42,Primary,Male,1.33,20900.0,4800.0,8400.0,No,3208.66,2.1,Cotton,6.19,Difficult,27.03,No,Andhra Pradesh,43,1.67
+F00233,1.25,Owned,37,Secondary,Male,5.1,13100.0,1500.0,6900.0,No,652.13,1.5,Millets,3.71,Moderate,20.39,No,Telangana,49,3.75
+F00234,2.21,Owned,25,Higher,Male,4.14,15000.0,5000.0,8700.0,Yes,6105.84,1.28,Rice,3.48,Moderate,11.13,No,Tamil Nadu,14,1.42
+F00235,2.44,Owned,33,None,Female,1.08,19900.0,3000.0,5300.0,No,865.28,1.56,Sugarcane,4.97,Moderate,33.32,No,Telangana,24,2.08
+F00236,2.18,Owned,49,None,Male,3.28,18900.0,3900.0,5700.0,Yes,1112.49,1.57,Maize,5.29,Easy,20.91,No,Telangana,46,1.7
+F00237,3.08,Leased,67,Primary,Male,5.34,9400.0,2600.0,4200.0,Yes,3616.55,2.81,Rice,4.49,Difficult,53.83,Yes,Karnataka,36,3.69
+F00238,2.44,Owned,71,Primary,Female,5.9,25300.0,2100.0,6500.0,Yes,2172.77,2.16,Cotton,2.5,Moderate,22.09,No,Tamil Nadu,43,3.29
+F00239,1.79,Owned,52,Higher,Male,1.54,12900.0,1700.0,5300.0,Yes,7320.06,2.36,Sugarcane,6.58,Difficult,16.36,Yes,Karnataka,11,3.1
+F00240,1.54,Owned,47,Primary,Male,3.93,15900.0,3600.0,6900.0,Yes,2684.76,0.68,Wheat,5.87,Easy,7.96,No,Andhra Pradesh,34,1.28
+F00241,3.53,Owned,33,Primary,Female,1.43,17200.0,2800.0,6500.0,No,5207.96,0.69,Maize,3.93,Moderate,14.73,No,Karnataka,39,0.68
+F00242,4.2,Mixed,65,Primary,Male,5.21,20000.0,4100.0,7600.0,No,2005.23,0.69,Wheat,6.83,Easy,10.8,Yes,Karnataka,29,2.04
+F00243,3.27,Owned,25,Secondary,Male,6.1,11100.0,1800.0,7700.0,No,3722.7,1.85,Rice,4.99,Moderate,33.01,Yes,Karnataka,34,1.81
+F00244,7.1,Mixed,49,Secondary,Male,0.99,16200.0,3600.0,7300.0,Yes,1978.8,1.5,Wheat,2.71,Moderate,41.51,No,Tamil Nadu,21,3.98
+F00245,3.29,Leased,68,Primary,Male,7.57,25400.0,3300.0,7100.0,No,2977.11,1.48,Maize,1.53,Moderate,47.22,No,Karnataka,13,3.06
+F00246,3.83,Owned,57,Secondary,Male,5.21,20400.0,4600.0,8200.0,No,4707.26,0.57,Rice,3.26,Easy,15.07,Yes,Karnataka,38,2.56
+F00247,3.79,Leased,53,Secondary,Male,4.16,25100.0,1500.0,6500.0,No,3469.46,1.02,Rice,4.07,Difficult,11.31,No,Telangana,44,2.86
+F00248,2.39,Owned,50,Secondary,Female,8.05,16600.0,4500.0,5900.0,Yes,4027.3,2.3,Millets,2.84,Moderate,65.64,No,Tamil Nadu,3,2.93
+F00249,3.49,Leased,51,Secondary,Male,7.84,20600.0,1400.0,7200.0,No,2953.47,1.74,Millets,5.16,Difficult,5.75,Yes,Karnataka,2,1.9
+F00250,6.81,Owned,70,Primary,Male,1.89,23900.0,3700.0,7300.0,No,2465.27,2.88,Rice,3.51,Easy,23.06,Yes,Kerala,49,1.15
