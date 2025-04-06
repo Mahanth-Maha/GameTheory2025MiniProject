@@ -1,6 +1,6 @@
 BASELINE_PARAMS = {
-    'alpha': 1.0,
-    'beta': 0.01,
+    'alpha': 1.25,
+    'beta': 0.0,
     'gamma': 0.5,
     'utility_func_name': 'linear',
     'vcg_price_per_credit': 2500.0,

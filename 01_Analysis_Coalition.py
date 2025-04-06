@@ -219,3 +219,6 @@ if __name__ == "__main__":
     plot_coalition_size_results(size_analysis_results, args.plot_dir)
 
     distribution_stability_results = analyze_distribution_stability(data, current_params, args.n_farmers, args.seed)
+ 
+# python 01_Analysis_Coalition.py --n_farmers 12 --params_alpha 1.25 --params_beta 0.0 --plot_dir ./logs/plots/ > ./logs/coalition/CA_n_12.log
+# nohup python 01_Analysis_Coalition.py --n_farmers 12 --params_alpha 1.25 --params_beta 0.0 --plot_dir ./logs/plots/ > ./logs/coalition/CA_n_12.log 2&>1 & disown

@@ -7,7 +7,7 @@ from utils import *
 from metrics import gini_coefficient,check_individual_rationality, calculate_ir_percentage
 from generate_data import get_data
 
-BEST_ALPHA = 1.0
+BEST_ALPHA = 1.25
 BEST_BETA = 0.0
 DEFAULT_DATA_FILE = './data/synthetic/indian_farmers_carbon_market_250.csv'
 DEFAULT_N_FARMERS = 100
