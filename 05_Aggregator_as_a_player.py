@@ -12,7 +12,6 @@ from utils import *
 from metrics import *
 
 # Overriding the functions(dynamic data param added)
-
 def shapley_value_exact(all_farmer_ids, v_func, **v_func_params):
     n = len(all_farmer_ids)
     if n == 0: 
@@ -80,7 +79,8 @@ def calculate_vf_aggregator(coalition_ids, data, alpha0, beta0, C_fixed, C_var, 
     v_F = (1.0 - delta_commission) * V_net_available
     return v_F
 
-N_FARMERS = 15
+# N_FARMERS = 10
+N_FARMERS = 250
 SEED = 24004
 DATA_FILE = './data/synthetic/indian_farmers_carbon_market_250.csv'
 PLOT_DIR = './logs/plots/aggregator_model/'
@@ -252,7 +252,7 @@ if __name__ == "__main__":
 
         axes[1, 0].plot(results_df[x_axis_var], results_df['ir_met_percentage'], marker='o', color='green')
         axes[1, 0].set_title('Farmer Participation (IR Met %)')
-        axes[1, 0].set_ylabel('% Farmers with $x_i >= r_i$')
+        axes[1, 0].set_ylabel('% Farmers with ($x_i ≥ r_i$)')
         axes[1, 0].set_ylim(-5, 105)
         axes[1, 0].grid(True, linestyle='--', alpha=0.6)
 
@@ -264,7 +264,6 @@ if __name__ == "__main__":
         axes[2, 0].plot(results_df[x_axis_var], results_df['gini_coefficient'], marker='o', color='brown')
         axes[2, 0].set_title('Fairness (Gini Coefficient of Farmer Payoffs)')
         axes[2, 0].set_ylabel('Gini Coefficient')
-        axes[2, 0].set_ylim(bottom=-0.05)
         axes[2, 0].grid(True, linestyle='--', alpha=0.6)
 
         axes[2, 0].set_xlabel(x_label)
@@ -275,9 +274,9 @@ if __name__ == "__main__":
             axes[2, 1].set_title('Core Stability (1=Stable, 0=Unstable)')
             axes[2, 1].set_yticks([0, 1])
             axes[2, 1].set_yticklabels(['Unstable', 'Stable'])
-            axes[2, 1].set_ylim(-0.1, 1.1)
+            axes[2, 1].set_ylim(-0.5, 1.5)
         else:
-            axes[2, 1].text(0.5, 0.5, 'Core Check Not Performed\nor Results Invalid',ha='center', va='center', fontsize=10, color='gray', wrap=True)
+            axes[2, 1].text(0.5, 0.5, 'Core Check Not Performed\nResults Invalid',ha='center', va='center', fontsize=10, color='gray', wrap=True)
             axes[2, 1].set_title('Core Stability')
             axes[2, 1].set_yticks([])
 
@@ -294,3 +293,4 @@ if __name__ == "__main__":
     print(f"\n[+] Done in Total time: {time.time() - start_time_total:.2f}s")
     
 # nohup python3 05_Aggregator_as_a_player.py > logs/aggregator_model/aggregator_model_v1.log 2>&1 &
+# nohup python3 05_Aggregator_as_a_player.py > logs/aggregator_model/aggregator_model_v2_n_250.log 2>&1 &

@@ -1,0 +1,52 @@
+nohup: ignoring input
+[+] Using all 250 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+[+] Running Aggregator Model Simulation for N=250
+[>] Base Params: alpha0=1.25, beta0=0.0
+[>] Agg Cost Params: C_fixed=10000, C_var=300
+[>] Commission Rates (DELTA): [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+  -> Testing delta = 0.000...
+[>] 0.0 --> Done in 95.30s
+  -> Testing delta = 0.050...
+[>] 0.05 --> Done in 93.55s
+  -> Testing delta = 0.100...
+[>] 0.1 --> Done in 93.34s
+  -> Testing delta = 0.150...
+[>] 0.15000000000000002 --> Done in 94.05s
+  -> Testing delta = 0.200...
+[>] 0.2 --> Done in 101.14s
+  -> Testing delta = 0.250...
+[>] 0.25 --> Done in 98.98s
+  -> Testing delta = 0.300...
+[>] 0.30000000000000004 --> Done in 100.76s
+  -> Testing delta = 0.350...
+[>] 0.35000000000000003 --> Done in 99.42s
+  -> Testing delta = 0.400...
+[>] 0.4 --> Done in 94.30s
+  -> Testing delta = 0.450...
+[>] 0.45 --> Done in 94.54s
+  -> Testing delta = 0.500...
+[>] 0.5 --> Done in 98.18s
+
+[+] Simulation Results Summary:
+    delta_commission  avg_farmer_payoff  ...  gini_coefficient   is_in_core
+0               0.00            24588.0  ...              0.14  Not Checked
+1               0.05            23358.6  ...              0.14  Not Checked
+2               0.10            22129.2  ...              0.14  Not Checked
+3               0.15            20899.8  ...              0.14  Not Checked
+4               0.20            19670.4  ...              0.14  Not Checked
+5               0.25            18441.0  ...              0.14  Not Checked
+6               0.30            17211.6  ...              0.14  Not Checked
+7               0.35            15982.2  ...              0.14  Not Checked
+8               0.40            14752.8  ...              0.14  Not Checked
+9               0.45            13523.4  ...              0.14  Not Checked
+10              0.50            12294.0  ...              0.14  Not Checked
+
+[11 rows x 7 columns]
+
+[+] Results saved to ./logs/aggregator_model/aggregator_model_results_n250_delta.csv
+
+[+] Generating plots in ./logs/plots/aggregator_model/...
+[+] Main impact plot saved to ./logs/plots/aggregator_model/aggregator_impact_vs_delta_n250.png
+
+[+] Done in Total time: 1065.52s
