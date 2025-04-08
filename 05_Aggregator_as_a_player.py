@@ -67,15 +67,15 @@ def get_characteristic_function_values(all_farmer_ids, v_func, **v_func_params):
             char_values[sorted_subset_ids] = v_func(list(sorted_subset_ids), **v_func_params)
     return char_values
 
-def calculate_vf_aggregator(coalition_ids, data, alpha0, beta0, C_fixed, C_var, delta_commission):
+def calculate_vf_aggregator(coalition_ids, data, alpha, beta, C_fixed, C_var, delta_commission):
     if not coalition_ids:
         return 0.0
     if not isinstance(coalition_ids, list):
         coalition_ids = list(coalition_ids)
-    V_potential = characteristic_function_v(coalition_ids, data, alpha=alpha0, beta=beta0)
+    V_potential = characteristic_function_v(coalition_ids, data, alpha=alpha, beta=beta)
     C_A = C_fixed + C_var * len(coalition_ids) if coalition_ids else 0.0
     V_net_available = max(0.0, V_potential - C_A)
-
+    
     v_F = (1.0 - delta_commission) * V_net_available
     return v_F
 
@@ -88,8 +88,8 @@ os.makedirs(PLOT_DIR, exist_ok=True)
 AGG_DIR = './logs/aggregator_model/'
 os.makedirs(AGG_DIR, exist_ok=True)
 
-ALPHA0 = 1.25 
-BETA0 = 0.0
+ALPHA = 1.25 
+BETA = 0.0
 
 C_FIXED = 10000 
 C_VAR = 300
@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
     results_list = []
     print(f"\n[+] Running Aggregator Model Simulation for N={N_FARMERS}")
-    print(f"[>] Base Params: alpha0={ALPHA0}, beta0={BETA0}")
+    print(f"[>] Base Params: alpha={ALPHA}, beta={BETA}")
     print(f"[>] Agg Cost Params: C_fixed={C_FIXED}, C_var={C_VAR}")
     print(f"[>] Commission Rates (DELTA): {DELTA_VALUES}")
 
@@ -131,8 +131,8 @@ if __name__ == "__main__":
             v_func_current_delta = functools.partial(
                 calculate_vf_aggregator,
                 data=data,
-                alpha0=ALPHA0,
-                beta0=BETA0,
+                alpha=ALPHA,
+                beta=BETA,
                 C_fixed=C_FIXED,
                 C_var=C_VAR,
                 delta_commission=delta_commission
@@ -149,8 +149,8 @@ if __name__ == "__main__":
         v_func_current_delta = functools.partial(
             calculate_vf_aggregator,
             data=data,
-            alpha0=ALPHA0,
-            beta0=BETA0,
+            alpha=ALPHA,
+            beta=BETA,
             C_fixed=C_FIXED,
             C_var=C_VAR,
             delta_commission=delta_commission
@@ -180,7 +180,7 @@ if __name__ == "__main__":
         avg_pct_gain = np.mean(gains_pct) if gains_pct else 0
         ir_met_percentage = (ir_met_count / N_FARMERS * 100) if N_FARMERS > 0 else 100
 
-        V_potential_N = characteristic_function_v(farmer_ids, data, alpha=ALPHA0, beta=BETA0)
+        V_potential_N = characteristic_function_v(farmer_ids, data, alpha=ALPHA, beta=BETA)
         C_A_N = C_FIXED + C_VAR * N_FARMERS if N_FARMERS > 0 else 0
         V_net_available_N = max(0.0, V_potential_N - C_A_N)
         aggregator_profit_piA = delta_commission * V_net_available_N
@@ -203,8 +203,8 @@ if __name__ == "__main__":
 
         results_list.append({
             'delta_commission': delta_commission,
-            'alpha0': ALPHA0,
-            'beta0': BETA0,
+            'alpha': ALPHA,
+            'beta': BETA,
             'C_fixed': C_FIXED,
             'C_var': C_VAR,
             'avg_farmer_payoff': avg_farmer_payoff,

@@ -188,3 +188,110 @@ def run_vcg_auction(data,price_per_credit):
     total_surplus = total_buyer_value - total_true_cost_winners
 
     return winners, payments, round(total_surplus, 2), round(total_payments, 2)
+
+
+# Aggregator Models 
+
+# Aggregator takes delta commission on NET value after costs
+def agg_model_commission_net(V_potential, C_A, R_S, delta, **kwargs):
+    V_net_available = max(0.0, V_potential - C_A)
+    aggregator_profit = delta * V_net_available
+    net_value_for_farmers = V_net_available - aggregator_profit
+    return aggregator_profit, net_value_for_farmers
+
+# Aggregator takes delta commission on SURPLUS above baseline sum R_S
+def agg_model_commission_surplus(V_potential, C_A, R_S, delta, **kwargs):
+    V_net_available = max(0.0, V_potential - C_A)
+    surplus = max(0.0, V_net_available - R_S)
+    aggregator_profit = delta * surplus
+    net_value_for_farmers = V_net_available - aggregator_profit
+    return aggregator_profit, net_value_for_farmers
+
+# Aggregator gets delta commission ONLY on value EXCEEDING a target (eta * R_S)
+def agg_model_target_commission(V_potential, C_A, R_S, delta, eta=1.1, **kwargs):
+    V_net_available = max(0.0, V_potential - C_A)
+    target_value = eta * R_S
+    if V_net_available >= target_value:
+        bonus_value = V_net_available - target_value
+        aggregator_profit = delta * bonus_value
+        net_value_for_farmers = V_net_available - aggregator_profit
+    else:
+        aggregator_profit = 0.0
+        net_value_for_farmers = V_net_available
+    return aggregator_profit, net_value_for_farmers
+
+# Two commission rates - delta on value up to R_S, delta2 on surplus
+def agg_model_two_tier_commission(V_potential, C_A, R_S, delta, delta2=0.1, **kwargs):
+    V_net_available = max(0.0, V_potential - C_A)
+    value_up_to_baseline = min(V_net_available, R_S)
+    surplus_value = max(0.0, V_net_available - R_S)
+    aggregator_profit = (delta * value_up_to_baseline) + (delta2 * surplus_value)
+    net_value_for_farmers = V_net_available - aggregator_profit
+    return aggregator_profit, net_value_for_farmers
+
+# Fixed fee per farmer + delta commission on remaining surplus."""
+def agg_model_fixed_fee_plus_surplus(V_potential, C_A, R_S, delta, fixed_fee_per_farmer=50, **kwargs):
+    V_net_available = max(0.0, V_potential - C_A)
+    num_farmers = kwargs.get('num_farmers', 0)
+    aggregator_fixed_profit = fixed_fee_per_farmer * num_farmers
+
+    surplus_for_commission = max(0.0, V_net_available - R_S - aggregator_fixed_profit)
+    aggregator_commission_profit = delta * surplus_for_commission
+    aggregator_profit = aggregator_fixed_profit + aggregator_commission_profit
+    aggregator_profit = min(aggregator_profit, V_net_available)
+
+    net_value_for_farmers = V_net_available - aggregator_profit
+    return aggregator_profit, net_value_for_farmers
+
+
+# Aggregator takes a fixed fee + delta commission on NET value after costs , farmers stanalone + surplus
+def agg_model_guranteeded_fee_for_all(V_potential, C_A, R_S, delta, **kwargs):
+    V_net = max(0.0, V_potential - R_S - C_A)
+    aggregator_bonus = delta * V_net
+    aggregator_total = C_A + aggregator_bonus
+    farmer_surplus   = R_S + (1 - delta) * V_net
+    return aggregator_total, farmer_surplus
+
+AGGREGATOR_MODELS = {
+    "commission_net": agg_model_commission_net,
+    "commission_surplus": agg_model_commission_surplus,
+    "target_commission": agg_model_target_commission,
+    "two_tier_commission": agg_model_two_tier_commission,
+    "fixed_fee_plus_surplus": agg_model_fixed_fee_plus_surplus,
+    "guranteeded_fee_for_all": agg_model_guranteeded_fee_for_all, 
+    "no_aggregator": lambda V_potential, C_A, R_S, **kwargs: (0.0, V_potential)
+}
+
+def calculate_agg_profit_and_vf(coalition_ids, data, model_name, alpha0, beta0, C_fixed, C_var, delta, delta2, eta, fee_per_farmer):
+    if not coalition_ids:
+        return 0.0, 0.0
+
+    if not isinstance(coalition_ids, list):
+        coalition_ids = list(coalition_ids)
+
+    V_potential = characteristic_function_v(coalition_ids, data, alpha=alpha0, beta=beta0)
+    C_A = C_fixed + C_var * len(coalition_ids) if coalition_ids else 0.0
+    coalition_data = data[data['Farmer_ID'].isin(coalition_ids)]
+    R_S = coalition_data['Standalone_Payoff_INR'].sum() if not coalition_data.empty else 0.0
+
+    model_func = AGGREGATOR_MODELS.get(model_name)
+    if not model_func:
+        raise ValueError(f"Unknown aggregator model name: {model_name}")
+        
+    agg_profit, v_F = model_func(
+        V_potential=V_potential,
+        C_A=C_A,
+        R_S=R_S,
+        delta=delta,
+        delta2=delta2,
+        eta=eta,
+        fixed_fee_per_farmer=fee_per_farmer,
+        num_farmers=len(coalition_ids)
+    )
+    return agg_profit, v_F
+
+def get_vf_func_for_model(data, model_name, alpha0, beta0, C_fixed, C_var, delta, delta2, eta, fee_per_farmer):
+    def vf_calculator(coalition_ids):
+        _, v_F = calculate_agg_profit_and_vf(coalition_ids, data, model_name, alpha0, beta0,C_fixed, C_var, delta, delta2, eta, fee_per_farmer)
+        return v_F
+    return vf_calculator
