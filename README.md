@@ -71,7 +71,7 @@ Parameters $\alpha (\texttt{alpha})$ and $\beta (\texttt{beta})$ were varied acr
   for all $S$. See `utils.py`.
 
 ### 3. Mechanism Design Models (Trading)
-*   **VCG Auction:** Implemented as described in the [Report](#references) (Section 3.3, Algorithm 3.3). Sellers (farmers) are assumed to bid their true cost $c_i$. Winners are those with $c_i <= p_{max}$ (market price). Payment $P_i$ is based on the critical cost (lowest losing bid or $p_{max}$). See `mechanism.py`.
+*   **VCG Auction:** Implemented as described in the [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) (Section 3.3, Algorithm 3.3). Sellers (farmers) are assumed to bid their true cost $c_i$. Winners are those with $c_i <= p_{max}$ (market price). Payment $P_i$ is based on the critical cost (lowest losing bid or $p_{max}$). See `mechanism.py`.
 *   **Uniform Price Auction:** Implemented based on sorting sellers by cost $c_i$, fulfilling a fixed buyer demand $Q_{demand}$, and setting a single clearing price based on the first excluded seller. See `mechanism.py`.
 
 ### 4. Evaluation Metrics
@@ -90,23 +90,23 @@ Various simulation scenarios were conducted to analyze different facets:
 
 ## Results and Discussion
 
-1.  **Value of Aggregation:** Simulations confirm that FPOs significantly increase the average value and potential payoff per farmer compared to standalone operation, especially when synergistic benefits ($beta > 0$) are present. Larger coalitions yield higher average value (See [Report](#references) Fig 5.1).
+1.  **Value of Aggregation:** Simulations confirm that FPOs significantly increase the average value and potential payoff per farmer compared to standalone operation, especially when synergistic benefits ($beta > 0$) are present. Larger coalitions yield higher average value (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.1).
 
 2.  **Shapley Value Performance:**
-    *   **Fairness:** Consistently provides equitable distributions with low Gini coefficients (~0.12-0.14) across various scenarios (See [Report](#references) Fig 5.4, 5.8).
-    *   **Individual Rationality (vs. $r_i$):** Crucially, Shapley meets the participation IR constraint (100% farmers have $phi_i >= r_i$) provided the net benefit from cooperation is non-negative (i.e., $alpha >= 1$ if $beta=0$, or $beta > 0$). This is vital for voluntary adoption (See [Report](#references) Fig 5.3).
-    *   **Stability:** For small N (N=12, N=15), Shapley allocations were found to be in the Core under tested parameters, suggesting stable cooperation (See [Report](#references) Table 5.1).
+    *   **Fairness:** Consistently provides equitable distributions with low Gini coefficients (~0.12-0.14) across various scenarios (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.4, 5.8).
+    *   **Individual Rationality (vs. $r_i$):** Crucially, Shapley meets the participation IR constraint (100% farmers have $phi_i >= r_i$) provided the net benefit from cooperation is non-negative (i.e., $alpha >= 1$ if $beta=0$, or $beta > 0$). This is vital for voluntary adoption (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.3).
+    *   **Stability:** For small N (N=12, N=15), Shapley allocations were found to be in the Core under tested parameters, suggesting stable cooperation (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Table 5.1).
 
 3.  **Auction Mechanism Performance:**
-    *   **VCG Efficiency:** Maximizes social surplus, and participation increases with market price (See [Report](#references) Fig 5.2, 5.6). Guarantees winners cover their carbon generation cost ($c_i$).
-    *   **VCG Participation Incentive Failure:** VCG (and Uniform Price) perform poorly on the critical IR metric ($x_i >= r_i$). Payoffs often don't compensate for the baseline farming opportunity cost, potentially discouraging voluntary participation (See [Report](#references) Fig 5.3).
-    *   **VCG Budget:** Generates a significant surplus for the auctioneer (See [Report](#references) Fig 5.6).
+    *   **VCG Efficiency:** Maximizes social surplus, and participation increases with market price (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.2, 5.6). Guarantees winners cover their carbon generation cost ($c_i$).
+    *   **VCG Participation Incentive Failure:** VCG (and Uniform Price) perform poorly on the critical IR metric ($x_i >= r_i$). Payoffs often don't compensate for the baseline farming opportunity cost, potentially discouraging voluntary participation (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.3).
+    *   **VCG Budget:** Generates a significant surplus for the auctioneer (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.6).
 
-4.  **Heterogeneity Impact:** Shapley value allocates gains proportionally to baseline contribution ($r_i$). In simulations with mixed small/large farmers, percentage gains were similar or identical, suggesting both groups have incentives to join (See [Report](#references) Fig 5.5).
+4.  **Heterogeneity Impact:** Shapley value allocates gains proportionally to baseline contribution ($r_i$). In simulations with mixed small/large farmers, percentage gains were similar or identical, suggesting both groups have incentives to join (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig 5.5).
 
 5.  **Parameter Sensitivity:** Outcomes are highly sensitive to $\alpha$ and $\beta$. $\alpha < 1$ (with $\beta=0$) fails IR. Small positive $\beta$ creates large gains due to the quadratic term, highlighting the need for realistic estimation.
 
-6.  **Aggregator Model Insights:** Introducing aggregator costs ($C_A(S)$) and commission ($delta$) reduces net farmer payoffs. There exists a critical $delta$ threshold (~15-20% in simulations) above which farmer participation (IR vs. $r_i$) collapses, even if the remaining allocation is Core-stable. This demonstrates the trade-off between aggregator viability and farmer incentives (See [Report](#references) Fig A.1).
+6.  **Aggregator Model Insights:** Introducing aggregator costs ($C_A(S)$) and commission ($delta$) reduces net farmer payoffs. There exists a critical $delta$ threshold (~15-20% in simulations) above which farmer participation (IR vs. $r_i$) collapses, even if the remaining allocation is Core-stable. This demonstrates the trade-off between aggregator viability and farmer incentives (See [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) Fig A.1).
 
 ## Novel Extension: Aggregator as a Strategic Player (Appendix A)
 
@@ -189,4 +189,4 @@ Execute scripts from the main project directory. Key scripts and examples:
 # references 
 
 *   [MoAFW2024VCM](https://www.mofw.gov.in/sites/default/files/Voluntary%20Carbon%20Market%20Framework%20for%20India.pdf) - Government of India, Ministry of Agriculture and Farmers Welfare, 2024. Voluntary Carbon Market Framework for India.*
-*   [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) - Yalla Mahanth, 2025. Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture.*
+*   [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) - Yalla Mahanth, 2025. Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture.
