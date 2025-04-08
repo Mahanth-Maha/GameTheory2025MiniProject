@@ -8,7 +8,7 @@
 
 **Course:** E1 254 Game Theory and Mechanism Design, IISc Bangalore
 
-**Report:** [Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture](will_host_it_soon)
+**Report:** [Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture](Report/VCM_in_AS_Yalla_Mahanth.pdf)
 
 ## Project Overview
 
@@ -189,4 +189,4 @@ Execute scripts from the main project directory. Key scripts and examples:
 # references 
 
 *   [MoAFW2024VCM](https://www.mofw.gov.in/sites/default/files/Voluntary%20Carbon%20Market%20Framework%20for%20India.pdf) - Government of India, Ministry of Agriculture and Farmers Welfare, 2024. Voluntary Carbon Market Framework for India.*
-*   [Report](will_host_it_soon)   
+*   [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) - Yalla Mahanth, 2025. Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture.*
