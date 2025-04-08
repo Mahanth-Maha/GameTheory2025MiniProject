@@ -276,7 +276,7 @@ if __name__ == "__main__":
             axes[2, 1].set_yticklabels(['Unstable', 'Stable'])
             axes[2, 1].set_ylim(-0.5, 1.5)
         else:
-            axes[2, 1].text(0.5, 0.5, 'Core Check Not Performed\nResults Invalid',ha='center', va='center', fontsize=10, color='gray', wrap=True)
+            axes[2, 1].text(0.25, 0.5, 'Core Check Not Performed\nResults Invalid',ha='center', va='center', fontsize=10, color='gray', wrap=True)
             axes[2, 1].set_title('Core Stability')
             axes[2, 1].set_yticks([])
 

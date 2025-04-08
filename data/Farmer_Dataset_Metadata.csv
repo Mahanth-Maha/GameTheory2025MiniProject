@@ -1,0 +1,22 @@
+Column,Description,Used,Value Range,Distribution
+Farmer_ID,Unique ID for each farmer,Yes,F00001 - F00250,Index
+Farm_Size_ha,Farm size in hectares,No,~0.5 to 15,Gamma
+Land_Tenure_Type,Ownership status of land,No,Owned / Leased / Mixed,Categorical
+Farmer_Age,Age of the farmer,No,20 to 75,Uniform 
+Education_Level,Education level of the farmer,No,None to Higher,Categorical
+Gender,Gender of the farmer,No,Male / Female,Categorical
+Potential_Carbon_Credits_tCO2e,Estimated carbon credits,Yes,"≥0.1, typical ~1–10",Gamma
+Standalone_Payoff_INR,Solo net income (gain - cost),Yes,"≥5000, typical ~15k–25k",Normal
+True_Cost_per_Credit_INR,Actual cost per carbon credit,Yes,"≥100, typical ~2k–4k",Gamma
+Certification_Cost_Individual_INR,Cost to certify carbon credits if alone,No,4000 to 9000,Uniform
+Debt_Status,Whether farmer is in debt,No,Yes / No,Categorical
+Water_Usage_m3,Water usage,No,~500 to 10000+,Gamma
+Soil_Organic_Carbon_t_per_ha,Soil carbon content,No,0.5 to 3.0,Uniform
+Crop_Type,Type of crop grown,No,"Rice, Maize, Cotton...",Categorical
+Crop_Yield_t_per_ha,Crop yield,No,~2 to 7,Normal
+Market_Access,Ease of access to markets,No,Easy / Moderate / Difficult,Categorical
+Economic_Vulnerability_Score,Score from 0 (low) to 100 (high vulnerability),No,0 to 100,Beta
+Previous_Coalition_Experience,Has farmer been in a coalition before?,No,Yes / No,Categorical
+Farm_Location_State,State name,No,"AP/KN/TN/TG",Categorical
+Farm_Location_District,District code (1-50),No,1 to 50,Uniform 
+Risk_Aversion_Coeff,Farmer's risk preference parameter,Yes,~0.1 to ~5,Beta
