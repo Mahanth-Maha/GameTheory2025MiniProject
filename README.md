@@ -32,15 +32,16 @@ The analysis uses computational simulations based on synthetic farmer data refle
 *   **Carbon Credits:** A tradable certificate representing the reduction or removal of one metric tonne of CO2 equivalent (tCO2e).
 *   **Farmer Producer Organization (FPO):** A legal entity formed by primary producers (farmers) to undertake collective business activities, including input procurement, production, and marketing. In the VCM context, they act as aggregators.
 *   **Cooperative Game Theory:** Analyzes situations where players (farmers) can form binding agreements (coalitions/FPOs) to achieve joint benefits.
-*   **Characteristic Function (`v(S)`):** A function defining the total value a coalition `S` can achieve by cooperating. In our model: `v(S) = alpha * sum(r_i) + beta * (sum(r_i))^2`.
-    *   `r_i`: Farmer `i`'s baseline standalone payoff.
-    *   $\alpha (\texttt{alpha})$: Baseline scaling factor.
-    *   $\beta (\texttt{beta})$: Synergy factor representing non-linear benefits of scale.
+*   **Characteristic Function ($v(S)$):** A function defining the total value a coalition $S$ can achieve by cooperating. In our model: 
+    $$ \displaystyle v(S) = \alpha  \sum(r_i) + \beta (\sum(r_i))^2 $$
+    *   $r_i$: Farmer $i$'s baseline standalone payoff.
+    *   $\alpha$: Baseline scaling factor.
+    *   $\beta$: Synergy factor representing non-linear benefits of scale.
 *   **The Core:** A solution concept in cooperative games. An allocation is in the Core if no subgroup of players can achieve a better outcome by splitting off from the grand coalition. Ensures stability.
-*   **Shapley Value (`phi_i(v)`):** A unique, axiomatically fair method to distribute the total value of a coalition among its members based on their average marginal contribution.
+*   **Shapley Value ($\phi_i(v)$):** A unique, axiomatically fair method to distribute the total value of a coalition among its members based on their average marginal contribution.
 *   **Mechanism Design:** The art of designing the "rules of the game" (e.g., auction rules) to achieve desired outcomes (efficiency, fairness, truthfulness) when participants act strategically.
 *   **VCG Auction (Vickrey-Clarke-Groves):** An auction mechanism known for efficiency (maximizing total surplus) and incentive compatibility (truthful bidding is optimal) under certain assumptions. Winners pay based on the externality they impose.
-*   **Individual Rationality (IR):** A participation constraint. In this context, specifically refers to whether a farmer's payoff from participating in the VCM (via FPO/auction) `x_i` is at least as good as their standalone farming payoff `r_i` (i.e., `x_i >= r_i`). This is critical for *voluntary* participation.
+*   **Individual Rationality (IR):** A participation constraint. In this context, specifically refers to whether a farmer's payoff from participating in the VCM (via FPO/auction) $x_i$ is at least as good as their standalone farming payoff $r_i$ (i.e., $x_i \ge r_i$). This is critical for *voluntary* participation.
 *   **Gini Coefficient:** A statistical measure of distribution inequality (0 = perfect equality, 1 = maximum inequality). Used here to measure the fairness of payoff distributions among farmers.
 
 ## Methodology
@@ -58,16 +59,20 @@ The analysis uses computational simulations based on synthetic farmer data refle
 *   FPOs are modeled as coalitions $S$ within the set of farmers $N$.
 *   The value generated $v(S)$ is calculated using the characteristic function 
 $$
-    v(S) = alpha * sum(r_i) + beta * (sum(r_i))^2
+    v(S) = \alpha \sum(r_i) + \beta (\sum(r_i))^2
 $$ 
   
 Parameters $\alpha (\texttt{alpha})$ and $\beta (\texttt{beta})$ were varied across experiments.
 *   **Shapley Value Calculation:** Computed using either the exact permutation method (for $N <= 10$) or Monte Carlo sampling (for $N > 10$, typically 10,000 samples) to determine fair payoffs $\phi_i(v)$. See `utils.py`.
-*   **Core Stability Check:** Implemented by checking the Core conditions for all non-trivial subsets (feasible only for $N <= 15$). An allocation $x$ is stable if $ \displaystyle \sum(x_i) = v(N) $ and $ \displaystyle \sum_{i \in S} x_i >= v(S) $ for all $S$. See `utils.py`.
+*   **Core Stability Check:** Implemented by checking the Core conditions for all non-trivial subsets (feasible only for $N <= 15$). An allocation $x$ is stable if 
+  $$ \displaystyle \sum(x_i) = v(N) $$ 
+  and 
+  $$ \displaystyle \sum_{i \in S} x_i >= v(S) $$ 
+  for all $S$. See `utils.py`.
 
 ### 3. Mechanism Design Models (Trading)
-*   **VCG Auction:** Implemented as described in the [Report](#references) (Section 3.3, Algorithm 3.3). Sellers (farmers) are assumed to bid their true cost $c_i$. Winners are those with $c_i <= p_max$ (market price). Payment $P_i$ is based on the critical cost (lowest losing bid or $p_max$). See `mechanism.py`.
-*   **Uniform Price Auction:** Implemented based on sorting sellers by cost $c_i$, fulfilling a fixed buyer demand $Q_demand$, and setting a single clearing price based on the first excluded seller. See `mechanism.py`.
+*   **VCG Auction:** Implemented as described in the [Report](#references) (Section 3.3, Algorithm 3.3). Sellers (farmers) are assumed to bid their true cost $c_i$. Winners are those with $c_i <= p_{max}$ (market price). Payment $P_i$ is based on the critical cost (lowest losing bid or $p_{max}$). See `mechanism.py`.
+*   **Uniform Price Auction:** Implemented based on sorting sellers by cost $c_i$, fulfilling a fixed buyer demand $Q_{demand}$, and setting a single clearing price based on the first excluded seller. See `mechanism.py`.
 
 ### 4. Evaluation Metrics
 *   Key metrics calculated include: Average Farmer Payoff, Absolute/Percentage Gain ($x_i - r_i$), IR Met Percentage ($x_i >= r_i$), Gini Coefficient, Core Stability Status, VCG Surplus, VCG Budget Balance, Number of Winners, Total Credits Supplied. See `metrics.py`.
@@ -77,11 +82,11 @@ Parameters $\alpha (\texttt{alpha})$ and $\beta (\texttt{beta})$ were varied acr
 Various simulation scenarios were conducted to analyze different facets:
 
 *   **Coalition Analysis (N=3 to 12):** Examined the effect of FPO size on average value and Shapley payoff per farmer. Assessed Core stability of Shapley, Equal Split, and Proportional allocations for N=12.
-*   **Pricing Analysis (N=250):** Simulated VCG auctions across a wide range of market prices ($p_max$ from 500 to 4000 INR) to generate supply curves and analyze VCG performance metrics (surplus, payments, fairness, etc.).
+*   **Pricing Analysis (N=250):** Simulated VCG auctions across a wide range of market prices ($p_{max}$ from 500 to 4000 INR) to generate supply curves and analyze VCG performance metrics (surplus, payments, fairness, etc.).
 *   **Mechanism Comparison (N=12 to 250):** Directly compared Shapley Allocation (with baseline $alpha=1.0, beta=0.0$), VCG Auction, and Uniform Price Auction across varying market prices. Focused on Average Farmer Profit, Gini, and crucially, IR Met % (vs. $r_i$).
-*   **Parameter Sensitivity (N=100):** Systematically varied $\alpha (\texttt{alpha})$ (0.75-1.50, with $beta=0$) and $\beta (\texttt{beta})$ (0.0-0.2, with fixed $\alpha (\texttt{alpha})$) to understand their impact on Shapley payoffs and IR satisfaction.
-*   **Heterogeneity Analysis (N=15):** Simulated a mixed coalition of 'Small' and 'Large' farmers to analyze if Shapley allocation provides equitable relative gains.
-*   **Aggregator Model Analysis (N=15, N=250):** Explored the novel extension where an aggregator incurs costs ($C_fixed$, $C_var$) and takes a commission ($delta$), analyzing the impact on net farmer payoffs ($v_F(S)$), IR, aggregator profit, and stability.
+*   **Parameter Sensitivity (N=100):** Systematically varied $\alpha$ (0.75-1.50, with $beta=0$) and $\beta$ (0.0-0.2, with fixed $\alpha$) to understand their impact on Shapley payoffs and IR satisfaction.
+*   **Heterogeneity Analysis (N=15):** Simulated a mixed coalition of `Small` and `Large` farmers to analyze if Shapley allocation provides equitable relative gains.
+*   **Aggregator Model Analysis (N=15, N=250):** Explored the novel extension where an aggregator incurs costs ($C_{base}$, $C_{var}$) and takes a commission ($delta$), analyzing the impact on net farmer payoffs ($V_F(S)$), IR, aggregator profit, and stability.
 
 ## Results and Discussion
 
@@ -99,14 +104,16 @@ Various simulation scenarios were conducted to analyze different facets:
 
 4.  **Heterogeneity Impact:** Shapley value allocates gains proportionally to baseline contribution ($r_i$). In simulations with mixed small/large farmers, percentage gains were similar or identical, suggesting both groups have incentives to join (See [Report](#references) Fig 5.5).
 
-5.  **Parameter Sensitivity:** Outcomes are highly sensitive to $\alpha (\texttt{alpha})$ and $\beta (\texttt{beta})$. $alpha < 1$ (with $beta=0$) fails IR. Small positive $\beta (\texttt{beta})$ creates large gains due to the quadratic term, highlighting the need for realistic estimation.
+5.  **Parameter Sensitivity:** Outcomes are highly sensitive to $\alpha$ and $\beta$. $\alpha < 1$ (with $\beta=0$) fails IR. Small positive $\beta$ creates large gains due to the quadratic term, highlighting the need for realistic estimation.
 
 6.  **Aggregator Model Insights:** Introducing aggregator costs ($C_A(S)$) and commission ($delta$) reduces net farmer payoffs. There exists a critical $delta$ threshold (~15-20% in simulations) above which farmer participation (IR vs. $r_i$) collapses, even if the remaining allocation is Core-stable. This demonstrates the trade-off between aggregator viability and farmer incentives (See [Report](#references) Fig A.1).
 
 ## Novel Extension: Aggregator as a Strategic Player (Appendix A)
 
-*   **Model:** Explicitly includes an aggregator $A$ with costs $C_A(S) = C_fixed + C_var * |S|$ and a commission rate $delta$. The net value available to farmers is $v_F(S) = (1 - delta) * max(0, V_potential(S) - C_A(S))$.
-*   **Methodology:** Simulated this model for N=15 and N=250, varying $delta$ from 0% to 50%. Calculated Shapley payoffs $\phi_i(v_F)$, aggregator profit, IR%, Gini, and Core stability (N=15).
+*   **Model:** Explicitly includes an aggregator $A$ with costs 
+$$C_A(S) = C_{base} + C_{var} * |S|$$ 
+and a commission rate $delta$. The net value available to farmers is $V_F(S) = (1 - delta) * max(0, V(S) - C_A(S))$.
+*   **Methodology:** Simulated this model for N=15 and N=250, varying $delta$ from 0% to 50%. Calculated Shapley payoffs $\phi_i(V_F)$, aggregator profit, IR%, Gini, and Core stability (N=15).
 *   **Key Finding:** Identified a critical commission threshold (~15-20% in these runs) beyond which farmer participation collapses ($IR\% \to 0$), demonstrating the crucial need to balance aggregator revenue with farmer incentives. Shapley maintained fairness (low Gini) and Core stability (for N=15) across commission rates, but participation failure renders stability moot.
 
 ## Conclusions
@@ -114,7 +121,7 @@ Various simulation scenarios were conducted to analyze different facets:
 1.  Aggregation via FPOs is crucial for smallholder participation in agricultural VCMs.
 2.  The Shapley value provides a demonstrably fair and stable (for small N) allocation mechanism that, crucially, satisfies the individual rationality constraint necessary for voluntary participation, provided the cooperative effort yields a net positive return over baseline farming.
 3.  Standard auction mechanisms like VCG, while efficient, may fail to incentivize broad voluntary farmer participation if payoffs don't sufficiently exceed baseline farming income ($r_i$).
-4.  The benefits of cooperation are highly sensitive to modeling parameters ($\alpha (\texttt{alpha})$, $\beta (\texttt{beta})$); realistic estimation is key.
+4.  The benefits of cooperation are highly sensitive to modeling parameters ($\alpha$, $\beta$); realistic estimation is key.
 5.  Explicitly modeling aggregator costs and commissions reveals a critical trade-off: excessive commission rates destroy farmer participation incentives, regardless of the fairness of internal allocation.
 6.  Game theory and mechanism design provide essential tools for analyzing and designing effective, equitable VCMs tailored to the complexities of Indian agriculture.
 
@@ -125,7 +132,8 @@ Various simulation scenarios were conducted to analyze different facets:
 ## Setup and Installation
 
 1.  **Clone:** 
-    ```bash git clone https://github.com/Mahanth-Maha/GameTheory2025MiniProject.git
+    ```bash 
+    git clone https://github.com/Mahanth-Maha/GameTheory2025MiniProject.git
     ```
 2.  **Navigate:** 
     ```bash 
