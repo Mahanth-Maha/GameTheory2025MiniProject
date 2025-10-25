@@ -1,0 +1,8 @@
+[+] Using all 250 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+[+] Running Aggregator Model Simulation: 'commission_net' for N=250
+[>] Base Params: alpha=1.25, beta=5e-06
+[>] Agg Cost Params: C_fixed=10000, C_var=300
+[>] Primary Commission (delta) Range: [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+[>] Core checks will be skipped.
+  -> Testing delta = 0.000...

@@ -1,0 +1,44 @@
+[>] Loaded data from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+--- Running Individual vs. Grand Coalition (N=12) ---
+
+[>] Average Gain (Shapley vs Standalone): 30217.29 INR
+[>] Percentage of Farmers Better Off: 100.0%
+   Farmer_ID  Standalone_Payoff  Shapley_Value  Gain_vs_Standalone
+0     F00075            16400.0       38602.26            22202.26
+1     F00228            20500.0       48025.20            27525.20
+2     F00070            27300.0       64336.58            37036.58
+3     F00016            22400.0       53013.35            30613.35
+4     F00173            19900.0       46711.15            26811.15
+5     F00015            29300.0       68826.66            39526.66
+6     F00104            12700.0       29989.22            17289.22
+7     F00005            19900.0       47176.12            27276.12
+8     F00049            24100.0       56438.57            32338.57
+9     F00232            20900.0       48797.33            27897.33
+10    F00186            28500.0       67040.84            38540.84
+11    F00063            26400.0       61950.18            35550.18
+
+--- Running Coalition Size Analysis (Sizes: [3, 5, 8, 12]) ---
+
+[>] Analyzing size 3...
+[>] Analyzing size 5...
+[>] Analyzing size 8...
+[>] Analyzing size 12...
+[>] Coalition Size Analysis Results:
+   Size  Avg_Value_per_Farmer  ...  Avg_Shapley_Value  StdDev_Shapley_Value
+0     3              26687.00  ...           26687.00               4112.91
+1     5              27543.41  ...           27543.41               3124.53
+2     8              35717.52  ...           35717.52               3262.29
+3    12              43415.04  ...           43415.04               5356.22
+
+[4 rows x 5 columns]
+[>] Saved coalition size results: ./logs/plots/n_farmers_12/coalition_size_analysis.csv
+[>] Saved coalition size plot: ./logs/plots/n_farmers_12/coalition_size_analysis.png
+
+--- Running Distribution Stability Analysis (N=12) ---
+
+[>] Distribution Stability Analysis Results:
+                        Rule  Is_in_Core    Gini
+0                    Shapley        True  0.1206
+1                Equal Split       False  0.0000
+2  Proportional (Standalone)        True  0.1205

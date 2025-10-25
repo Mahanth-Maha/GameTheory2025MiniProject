@@ -1,14 +1,28 @@
 
 # Voluntary Carbon Market in Agriculture: A Game-Theoretic and Mechanism Design Analysis
 
-`Game Theory 2025 - Mini Project`
----
+This project develops a **Voluntary Carbon Market (VCM)** framework for India’s agriculture to empower small farmers through fair, efficient carbon credit trading. It applies **Cooperative Game Theory** and **Mechanism Design** to analyze FPO stability, equitable benefit sharing, and participation incentives.
 
-**Author:** Yalla Mahanth (mahanthyalla[at]iisc[dot]ac[dot]in)
 
-**Course:** E1 254 Game Theory and Mechanism Design, IISc Bangalore
 
-**Report:** [Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture](Report/VCM_in_AS_Yalla_Mahanth.pdf)
+<div align="center">
+<br>
+<br>
+<br>
+<h2><strong>Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture</h2>
+
+<p><em>Project Work for <strong>Course</strong> : <strong>E1 254 Game Theory and Mechanism Design (GTMD 2025), IISc Bangalore </strong></em></p>
+
+
+
+<p align="center">
+|  
+<a href="Report/VCM_in_AS_Yalla_Mahanth.pdf"><b>📄 White Paper (Report)</b></a> | 
+<a href="https://mahanthyalla.in/GameTheory2025MiniProject"><b>🌐 Web Page</b></a> | 
+<a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject#repository-structure"><b>📃 Documentation</b></a> |
+</p>
+<br>
+</div>
 
 ## Project Overview
 
@@ -30,15 +44,15 @@ The analysis uses computational simulations based on synthetic farmer data refle
 
 *   **Voluntary Carbon Market (VCM):** A market where entities voluntarily buy carbon credits to offset their emissions. Credits are generated from projects that verifiably reduce or remove greenhouse gases (e.g., sustainable agriculture).
 *   **Carbon Credits:** A tradable certificate representing the reduction or removal of one metric tonne of CO2 equivalent (tCO2e).
-*   **Farmer Producer Organization (FPO):** A legal entity formed by primary producers (farmers) to undertake collective business activities, including input procurement, production, and marketing. In the VCM context, they act as aggregators.
+*   **Farmer Producer Organization** **(FPO):** A legal entity formed by primary producers (farmers) to undertake collective business activities, including input procurement, production, and marketing. In the VCM context, they act as aggregators.
 *   **Cooperative Game Theory:** Analyzes situations where players (farmers) can form binding agreements (coalitions/FPOs) to achieve joint benefits.
-*   **Characteristic Function ($v(S)$):** A function defining the total value a coalition $S$ can achieve by cooperating. In our model: 
-    $$ \displaystyle v(S) = \alpha  \sum(r_i) + \beta (\sum(r_i))^2 $$
+*   **Characteristic Function (**$v(S)$**):** A function defining the total value a coalition $S$ can achieve by cooperating. In our model: 
+    $$\displaystyle v(S) = \alpha  \sum(r_i) + \beta (\sum(r_i))^2$$
     *   $r_i$: Farmer $i$'s baseline standalone payoff.
     *   $\alpha$: Baseline scaling factor.
     *   $\beta$: Synergy factor representing non-linear benefits of scale.
 *   **The Core:** A solution concept in cooperative games. An allocation is in the Core if no subgroup of players can achieve a better outcome by splitting off from the grand coalition. Ensures stability.
-*   **Shapley Value ($\phi_i(v)$):** A unique, axiomatically fair method to distribute the total value of a coalition among its members based on their average marginal contribution.
+*   **Shapley Value (**$\phi_i(v)$**):** A unique, axiomatically fair method to distribute the total value of a coalition among its members based on their average marginal contribution.
 *   **Mechanism Design:** The art of designing the "rules of the game" (e.g., auction rules) to achieve desired outcomes (efficiency, fairness, truthfulness) when participants act strategically.
 *   **VCG Auction (Vickrey-Clarke-Groves):** An auction mechanism known for efficiency (maximizing total surplus) and incentive compatibility (truthful bidding is optimal) under certain assumptions. Winners pay based on the externality they impose.
 *   **Individual Rationality (IR):** A participation constraint. In this context, specifically refers to whether a farmer's payoff from participating in the VCM (via FPO/auction) $x_i$ is at least as good as their standalone farming payoff $r_i$ (i.e., $x_i \ge r_i$). This is critical for *voluntary* participation.
@@ -58,16 +72,14 @@ The analysis uses computational simulations based on synthetic farmer data refle
 ### 2. Cooperative Game Model (FPOs)
 *   FPOs are modeled as coalitions $S$ within the set of farmers $N$.
 *   The value generated $v(S)$ is calculated using the characteristic function 
-$$
-    v(S) = \alpha \sum(r_i) + \beta (\sum(r_i))^2
-$$ 
+$$v(S) = \alpha \sum(r_i) + \beta (\sum(r_i))^2$$ 
   
 Parameters $\alpha (\texttt{alpha})$ and $\beta (\texttt{beta})$ were varied across experiments.
 *   **Shapley Value Calculation:** Computed using either the exact permutation method (for $N <= 10$) or Monte Carlo sampling (for $N > 10$, typically 10,000 samples) to determine fair payoffs $\phi_i(v)$. See `utils.py`.
 *   **Core Stability Check:** Implemented by checking the Core conditions for all non-trivial subsets (feasible only for $N <= 15$). An allocation $x$ is stable if 
-  $$ \displaystyle \sum(x_i) = v(N) $$ 
+  $$\displaystyle \sum(x_i) = v(N)$$ 
   and 
-  $$ \displaystyle \sum_{i \in S} x_i >= v(S) $$ 
+  $$\displaystyle \sum_{i \in S} x_i >= v(S)$$ 
   for all $S$. See `utils.py`.
 
 ### 3. Mechanism Design Models (Trading)
@@ -189,4 +201,23 @@ Execute scripts from the main project directory. Key scripts and examples:
 # references 
 
 *   [MoAFW2024VCM](https://www.mofw.gov.in/sites/default/files/Voluntary%20Carbon%20Market%20Framework%20for%20India.pdf) - Government of India, Ministry of Agriculture and Farmers Welfare, 2024. Voluntary Carbon Market Framework for India.*
-*   [Report](Report/VCM_in_AS_Yalla_Mahanth.pdf) - Yalla Mahanth, 2025. Game Theory and Mechanism Design for Voluntary Carbon Market in Agriculture.
+
+
+---
+
+<p align="left">
+    <span style="
+    font-size:22px;
+    font-family:'Georgia', 'Garamond', 'Times New Roman', serif;
+    font-weight:700;
+    color:#94dfff;">
+    <a href="https://mahanthyalla.in" style="color:#94dfff; text-decoration:none;">
+      Mahanth Yalla
+    </a>
+  </span><br>
+  <span style="font-size: 16px; font-family:'Times New Roman', Times, serif;">
+      MTech - Artificial Intelligence,<br>
+      <strong>Indian Institute of Science,</strong><br>
+      Bangalore - 560012.<br>
+  </span>
+</p>

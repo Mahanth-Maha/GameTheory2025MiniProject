@@ -1,0 +1,2 @@
+delta1,alpha0,beta0,C_fixed,C_var,avg_farmer_payoff,avg_abs_gain,avg_pct_gain,gini_coefficient,ir_met_percentage,aggregator_profit_piA,total_farmer_value_vfN,V_potential_N,C_A_N,V_net_available_N,Surplus_N,R_N,is_in_core
+0.25,1.25,0.0,10000,300,19556.25,-2077.0833333333335,-9.77107730225706,0.12591666489116154,0.0,97781.25,293343.75,405625.0,14500,391125.0,66625.0,324500.0,True

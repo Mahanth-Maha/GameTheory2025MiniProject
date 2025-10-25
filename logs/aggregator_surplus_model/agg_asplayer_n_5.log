@@ -1,0 +1,105 @@
+[+] Sampled 5 farmers from ./data/synthetic/indian_farmers_carbon_market_250.csv
+
+[+] Running Aggregator (Surplus Commission) Model Simulation for N=5
+    Base Params: alpha0=1.25, beta0=0.0
+    Agg Cost Params: C_fixed=10000, C_var=1500
+    Commission Rates (DELTA): [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5  0.55 0.6  0.65
+ 0.7  0.75 0.8  0.85 0.9  0.95 1.  ]
+[+] Precomputing characteristic values for Core checks...
+[+] Precomputation done.
+  -> Testing delta = 0.000...
+[>] Checking Core stability...	Stable
+     Done in 0.31s
+  -> Testing delta = 0.050...
+[>] Checking Core stability...	Stable
+     Done in 0.31s
+  -> Testing delta = 0.100...
+[>] Checking Core stability...	Stable
+     Done in 0.38s
+  -> Testing delta = 0.150...
+[>] Checking Core stability...	Stable
+     Done in 0.36s
+  -> Testing delta = 0.200...
+[>] Checking Core stability...	Stable
+     Done in 0.33s
+  -> Testing delta = 0.250...
+[>] Checking Core stability...	Stable
+     Done in 0.35s
+  -> Testing delta = 0.300...
+[>] Checking Core stability...	Stable
+     Done in 0.33s
+  -> Testing delta = 0.350...
+[>] Checking Core stability...	Stable
+     Done in 0.30s
+  -> Testing delta = 0.400...
+[>] Checking Core stability...	Stable
+     Done in 0.33s
+  -> Testing delta = 0.450...
+[>] Checking Core stability...	Stable
+     Done in 0.29s
+  -> Testing delta = 0.500...
+[>] Checking Core stability...	Stable
+     Done in 0.29s
+  -> Testing delta = 0.550...
+[>] Checking Core stability...	Stable
+     Done in 0.33s
+  -> Testing delta = 0.600...
+[>] Checking Core stability...	Stable
+     Done in 0.33s
+  -> Testing delta = 0.650...
+[>] Checking Core stability...	Stable
+     Done in 0.32s
+  -> Testing delta = 0.700...
+[>] Checking Core stability...	Stable
+     Done in 0.32s
+  -> Testing delta = 0.750...
+[>] Checking Core stability...	Unstable
+     Done in 0.30s
+  -> Testing delta = 0.800...
+[>] Checking Core stability...	Unstable
+     Done in 0.30s
+  -> Testing delta = 0.850...
+[>] Checking Core stability...	Unstable
+     Done in 0.33s
+  -> Testing delta = 0.900...
+[>] Checking Core stability...	Unstable
+     Done in 0.31s
+  -> Testing delta = 0.950...
+[>] Checking Core stability...	Unstable
+     Done in 0.29s
+  -> Testing delta = 1.000...
+[>] Checking Core stability...	Unstable
+     Done in 0.31s
+
+[+] Simulation Results Summary (Surplus Commission Model):
+    delta_commission  avg_farmer_payoff  ...  gini_coefficient  is_in_core
+0               0.00           23125.00  ...              0.11        True
+1               0.05           23033.75  ...              0.10        True
+2               0.10           22942.50  ...              0.10        True
+3               0.15           22851.25  ...              0.10        True
+4               0.20           22760.00  ...              0.10        True
+5               0.25           22668.75  ...              0.10        True
+6               0.30           22577.50  ...              0.10        True
+7               0.35           22486.25  ...              0.10        True
+8               0.40           22395.00  ...              0.10        True
+9               0.45           22303.75  ...              0.10        True
+10              0.50           22212.50  ...              0.10        True
+11              0.55           22121.25  ...              0.10        True
+12              0.60           22030.00  ...              0.10        True
+13              0.65           21938.75  ...              0.10        True
+14              0.70           21847.50  ...              0.10        True
+15              0.75           21756.25  ...              0.10       False
+16              0.80           21665.00  ...              0.10       False
+17              0.85           21573.75  ...              0.10       False
+18              0.90           21482.50  ...              0.10       False
+19              0.95           21391.25  ...              0.10       False
+20              1.00           21300.00  ...              0.10       False
+
+[21 rows x 8 columns]
+
+[+] Results saved to ./logs/aggregator_surplus_model/aggregator_surplus_model_results_n5_delta.csv
+
+[+] Generating plots in ./logs/plots/aggregator_surplus_model/...
+[+] Main impact plot saved to ./logs/plots/aggregator_surplus_model/aggregator_impact_vs_delta_n5.png
+
+[+] Aggregator (Surplus Commission) model analysis complete. Total time: 7.86s

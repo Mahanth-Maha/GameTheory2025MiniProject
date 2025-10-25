@@ -159,6 +159,13 @@ def analyze_distribution_stability(data, params, sample_n, seed):
     print(results_df.round(4))
     return results_df
 
+def save_coalition_size_results(df, output_dir):
+    if df is None or df.empty: return
+    filename = os.path.join(output_dir, 'coalition_size_analysis.csv')
+    df.to_csv(filename, index=False)
+    print(f"[>] Saved coalition size results: {filename}")
+    
+
 def plot_coalition_size_results(df, output_dir):
     if df is None or df.empty: return
     plt.figure(figsize=(12, 5))
@@ -176,7 +183,7 @@ def plot_coalition_size_results(df, output_dir):
     plt.ylabel("Average Shapley Value (within coalition)")
     plt.title("Average Shapley Value vs. Size")
     plt.grid(True, linestyle='--', alpha=0.6)
-
+    save_coalition_size_results(df, output_dir)
     plt.tight_layout()
     filename = os.path.join(output_dir, 'coalition_size_analysis.png')
     plt.savefig(filename)
@@ -222,3 +229,4 @@ if __name__ == "__main__":
  
 # python 01_Analysis_Coalition.py --n_farmers 12 --params_alpha 1.25 --params_beta 0.0 --plot_dir ./logs/plots/ > ./logs/coalition/CA_n_12.log
 # nohup python 01_Analysis_Coalition.py --n_farmers 12 --params_alpha 1.25 --params_beta 0.0 --plot_dir ./logs/plots/ > ./logs/coalition/CA_n_12.log 2&>1 & disown
+# nohup python 01_Analysis_Coalition.py --n_farmers 12 --params_alpha 1.01 --params_beta 5e-6 --plot_dir ./logs/plots/ > ./logs/coalition/CA_n_12_paper.log 2&>1 & disown
