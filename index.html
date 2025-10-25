@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntary Carbon Market in Agriculture: A Game Theory Approach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: rgb(228, 231, 192);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .container2 {
+            max-width: 1200px;
+            margin: 30px auto 0 auto;
+            padding: 0 20px;
+        }
+        .container3 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #010b1e;
+        }
+        .my-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .my-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        header {
+            background: #9fecff;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #1b0000;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #010b1e;
+            margin-bottom: 30px;
+        }
+
+        .author {
+            font-size: 1.1em;
+            color: #1a4b8a;
+            margin-bottom: 10px;
+        }
+
+        .affiliation {
+            color: #1e5194;
+            font-size: 0.95em;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #d45d0e;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(212, 93, 14, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 93, 14, 0.6);
+        }
+
+        .btn-secondary {
+            background: #28407a;
+            box-shadow: 0 4px 15px rgba(40, 64, 122, 0.4);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 6px 20px rgba(40, 64, 122, 0.6);
+        }
+
+        main {
+            background: white;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        section {
+            padding: 60px 40px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #2d3748;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #252d51 0%, #282e75 100%);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #4a5568;
+            margin: 30px 0 15px 0;
+        }
+
+        .abstract {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .highlight-card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .highlight-card h3 {
+            color: #667eea;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .result-card:hover {
+            transform: scale(1.02);
+        }
+
+        .result-header {
+            background: #2c3665;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .result-header h3 {
+            margin: 0;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        .result-body {
+            padding: 25px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .metric-value {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .metric-value.perfect {
+            color: #48bb78;
+        }
+
+        .metric-value.excellent {
+            color: #667eea;
+        }
+
+        .metric-value.warning {
+            color: #ed8936;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: #505159;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e2e8f0;
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: #f7fafc;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .method-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            min-width: 50px;
+            height: 50px;
+            background: #595c69;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+            padding-top: 5px;
+        }
+
+        .step-content h3 {
+            margin-top: 0;
+            color: #2d3748;
+        }
+
+        .code-block {
+            background: #313131;
+            color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #010b1e;
+            font-size: 0.95em;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .stat-box h4 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .stat-box p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #48bb78;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .badge.new {
+            background: #f56565;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Voluntary Carbon Market in the Agriculture Sector</h1>
+            <p class="subtitle">A Game-Theoretic and Mechanism Design Approach</p>
+            <p class="author"><strong>Yalla Mahanth</strong></p>
+            <p class="affiliation">Department of Computer Science and Automation</p>
+            <p class="affiliation">Indian Institute of Science, Bengaluru</p>
+            <div class="buttons">
+                <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject" class="btn" target="_blank">View on GitHub</a>
+                <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject/blob/main/VCM_in_AS_Yalla_Mahanth.pdf" class="btn btn-secondary" target="_blank">Read Paper 📄</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container2">
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <div class="abstract">
+                Small and marginal farmers in India encounter significant barriers in accessing emerging carbon markets due to high transaction costs, limited bargaining power, and resource constraints. This study addresses these issues using a <strong>dual approach</strong>: (1) <strong>Cooperative Game Theory</strong> to examine coalition formation among farmers through Farmer Producer Organizations (FPOs), assessing benefits of aggregation, stability via the Core concept, and fairness through the Shapley value; (2) <strong>Mechanism Design</strong> to investigate carbon credit pricing and trading by comparing Shapley-based allocation with traditional auction mechanisms like VCG. Simulation results indicate that farmer coalitions can substantially enhance individual payoffs, with Shapley allocation consistently ensuring <strong>equitable outcomes and 100% individual rationality</strong>—unlike conventional auction methods.
+            </div>
+        </section>
+
+        <section id="context">
+            <h2>Context & Motivation</h2>
+            <p>Agriculture forms the backbone of India's economy, contributing <strong>~18% to GDP</strong> and supporting over half its population. However, Indian agriculture faces mounting pressures from climate change, rising input costs, and land tenure complexities.</p>
+            
+            <div class="two-column" style="margin-top: 30px;">
+                <div class="stat-box">
+                    <h4>86%</h4>
+                    <p>of agricultural land cultivated by small & marginal farmers</p>
+                </div>
+                <div class="stat-box">
+                    <h4>60%</h4>
+                    <p>of total land area used for agriculture</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">The Voluntary Carbon Market Framework</h3>
+            <p>The Government of India's proposed VCM framework aims to incentivize farmers to adopt sustainable practices (agroforestry, conservation tillage, reduced fertilizer use) by enabling them to generate and sell carbon credits. However, critical challenges remain:</p>
+            <ul style="margin-top: 15px; padding-left: 20px;">
+                <li><strong>High Transaction Costs:</strong> MRV (Monitoring, Reporting, Verification) requirements</li>
+                <li><strong>Limited Bargaining Power:</strong> Individual farmers lack negotiation leverage</li>
+                <li><strong>Resource Constraints:</strong> Limited technical knowledge and access to finance</li>
+                <li><strong>Fair Revenue Distribution:</strong> How to equitably share collective benefits</li>
+            </ul>
+        </section>
+
+        <section id="highlights">
+            <h2>Key Contributions</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>Coalition Analysis</h3>
+                    <p>Model FPOs as cooperative coalitions using characteristic functions that capture economies of scale and synergistic effects.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Shapley Value Allocation</h3>
+                    <p>Fair revenue distribution based on marginal contributions, ensuring equitable outcomes and individual rationality.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Core Stability</h3>
+                    <p>Analysis of coalition stability ensuring no subgroup has incentive to deviate from the FPO structure.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Mechanism Comparison</h3>
+                    <p>Comprehensive evaluation of VCG auctions, Uniform Price auctions, and cooperative game-theoretic approaches.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach">
+            <h2>Dual Methodological Approach</h2>
+            
+            <h3>1. Cooperative Game Theory Model</h3>
+            <div class="method-steps">
+                <div class="step">
+                    <div class="step-number">A</div>
+                    <div class="step-content">
+                        <h3>Characteristic Function</h3>
+                        <p>Model coalition value with baseline contributions and synergy effects:</p>
+                        <div class="code-block">v(S) = α Σ r<sub>i</sub> + β (Σ r<sub>i</sub>)²
+                        </div>
+                        <p>where </p>
+                        <div class="code-block">
+                        <span style="opacity: 0.7;">
+                            r<sub>i</sub> = standalone farmer payoff<br>
+                            α ≥ 0 = scaling parameter<br>
+                            β ≥ 0 = synergy parameter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">B</div>
+                    <div class="step-content">
+                        <h3>Shapley Value Computation</h3>
+                        <p>Calculate fair allocation based on expected marginal contributions across all possible joining orders. Uses exact computation for small coalitions (n≤10) and Monte Carlo approximation for larger groups.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">C</div>
+                    <div class="step-content">
+                        <h3>Core Stability Check</h3>
+                        <p>Verify no blocking coalitions exist: ensure Σ<sub>i∈S</sub> x<sub>i</sub> ≥ v(S) for all subsets S ⊆ N, guaranteeing coalition stability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">2. Mechanism Design Approach</h3>
+            <div class="method-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>VCG Auction</h3>
+                        <p>Vickrey-Clarke-Groves mechanism ensuring efficient allocation and strategy-proof bidding. Winners pay based on critical cost (lowest excluded bidder's cost).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Uniform Price Auction</h3>
+                        <p>Simple clearing mechanism where all winners receive the same market-clearing price based on total demand.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Performance Comparison</h3>
+                        <p>Evaluate mechanisms on farmer profitability, fairness (Gini coefficient), and individual rationality vs. standalone farming payoff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Key Results <span class="badge">Evidence-Based</span></h2>
+            
+            <h3>Coalition Value Creation</h3>
+            <p>Experiments with varying coalition sizes (N ∈ {3, 5, 8, 12}) using baseline parameters (α=1.0, β=0.01) demonstrate substantial value generation through aggregation:</p>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Value Per Farmer</h3>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="metric-label">Coalition Size N=3</span>
+                            <span class="metric-value">Baseline + 5%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Coalition Size N=8</span>
+                            <span class="metric-value excellent">Baseline + 12%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Coalition Size N=12</span>
+                            <span class="metric-value perfect">Baseline + 18%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Stability Analysis (N=12)</h3>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="metric-label">Shapley Value</span>
+                            <span class="metric-value perfect">Core Stable</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Equal Split</span>
+                            <span class="metric-value perfect">Core Stable</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Proportional Split</span>
+                            <span class="metric-value perfect">Core Stable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Fairness Metrics</h3>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="metric-label">Shapley Gini</span>
+                            <span class="metric-value excellent">0.12</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Equal Split Gini</span>
+                            <span class="metric-value perfect">0.00</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Proportional Gini</span>
+                            <span class="metric-value excellent">0.12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;">Mechanism Comparison Results (N=250)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mechanism</th>
+                        <th>Avg Profit (INR)</th>
+                        <th>IR Met (%)</th>
+                        <th>Gini Coefficient</th>
+                        <th>Participation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Shapley (α=1.0, β=0.0)</strong></td>
+                        <td>~20,000</td>
+                        <td><strong style="color: #48bb78;">100%</strong></td>
+                        <td><strong style="color: #48bb78;">0.14</strong></td>
+                        <td>Full</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VCG Auction</strong></td>
+                        <td>8,000 - 15,000</td>
+                        <td><strong style="color: #f56565;">< 10%</strong></td>
+                        <td>0.25 - 0.32</td>
+                        <td>Price-dependent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uniform Price</strong></td>
+                        <td>< 5,000</td>
+                        <td><strong style="color: #f56565;">0%</strong></td>
+                        <td><strong style="color: #f56565;">~1.0</strong></td>
+                        <td>Very Low</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Critical Findings</h3>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>Individual Rationality</h3>
+                    <p>Shapley allocation achieves <strong>100% IR</strong> (all farmers better off than standalone) while VCG shows <strong>< 10% IR</strong> at most price points.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Superior Fairness</h3>
+                    <p>Shapley demonstrates excellent fairness (Gini ≈ 0.14) compared to VCG (0.25-0.32) and Uniform Price (≈ 1.0).</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Parameter Sensitivity</h3>
+                    <p>When α < 1.0, all farmers worse off (0% IR). When α ≥ 1.0 with β > 0, significant gains achieved with maintained fairness.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Aggregator Impact</h3>
+                    <p>Commission rates > 20% cause participation collapse. Critical balance needed between aggregator viability and farmer incentives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="heterogeneity">
+            <h2>Impact of Farmer Heterogeneity</h2>
+            <p>Simulations with mixed coalitions (N=15: 10 small farmers, 5 large farmers) under different parameter settings reveal:</p>
+
+            <h3>Scenario 1: α=1.0, β=0.0 (No Synergy)</h3>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li>Shapley returns exactly standalone payoff to each farmer (φ<sub>i</sub> = r<sub>i</sub>)</li>
+                <li>No strict incentive to join, but no one made worse off</li>
+            </ul>
+
+            <h3>Scenario 2: α=1.25, β=0.0 (Baseline Scaling Only)</h3>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li><strong>Uniform percentage gain:</strong> All farmers receive exactly 25% increase (φ<sub>i</sub> = 1.25 × r<sub>i</sub>)</li>
+                <li><strong>Absolute gains differ:</strong> Large farmers gain more in INR, but relative benefit identical</li>
+                <li><strong>Result:</strong> Equitable incentive structure for both small and large farmers</li>
+            </ul>
+
+            <p style="margin-top: 20px;"><em>This demonstrates that Shapley allocation doesn't disadvantage small farmers when working with heterogeneous coalitions, maintaining proportional fairness.</em></p>
+        </section>
+
+        <section id="aggregator">
+            <h2>Aggregator-Mediated Model</h2>
+            <p>Extended analysis modeling the FPO/aggregator as a strategic player with operational costs and commission structure:</p>
+
+            <h3>Model Components</h3>
+            <p>Net Value for Farmers: </p>
+            <div class="code-block">
+                V<sub>F</sub>(S) = (1 - δ) × V<sub>net</sub>(S)
+            </div>
+            <p>where</p> 
+            <div class="code-block">
+                V<sub>net</sub>(S) = max(0, V(S) - C<sub>A</sub>(S)) <br>
+                C<sub>A</sub>(S) = C<sub>base</sub> + C<sub>var</sub> × |S|<br>
+                δ = aggregator commission rate
+            </div>
+
+            <h3>Key Findings (C<sub>base</sub>=10,000 INR, C<sub>var</sub>=300 INR/farmer)</h3>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Commission δ = 0-15%</h3>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="metric-label">IR Satisfaction</span>
+                            <span class="metric-value perfect">100%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Core Stability</span>
+                            <span class="metric-value perfect">Stable</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Farmer Participation</span>
+                            <span class="metric-value perfect">Full</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Commission δ = 20%+</h3>
+                    </div>
+                    <div class="result-body">
+                        <div class="metric">
+                            <span class="metric-label">IR Satisfaction</span>
+                            <span class="metric-value warning">0%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Core Stability</span>
+                            <span class="metric-value">Stable (but irrelevant)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Farmer Participation</span>
+                            <span class="metric-value warning">Collapse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px;"><strong>Critical Insight:</strong> A threshold exists (~15-20% commission) beyond which voluntary participation collapses, even with fair internal allocation. VCM design must balance aggregator sustainability with sufficient farmer incentives.</p>
+        </section>
+
+        <section id="implications">
+            <h2>Policy Implications & Recommendations</h2>
+            
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>1. Prioritize FPO Formation</h3>
+                    <p>Government should strongly incentivize farmer aggregation through FPOs. Simulations show 18%+ value increase for N=12 coalitions with modest synergy (β=0.01).</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>2. Adopt Shapley-Based Distribution</h3>
+                    <p>Implement Shapley value or similar cooperative game-theoretic allocation for internal FPO revenue sharing to ensure fairness and 100% IR satisfaction.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>3. Regulate Aggregator Commissions</h3>
+                    <p>Set commission rate caps (< 15-20%) for aggregators/FPOs to maintain farmer participation incentives while ensuring operational sustainability.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>4. Hybrid Mechanism Design</h3>
+                    <p>Consider hybrid approaches combining VCG-style price discovery for external markets with Shapley-based internal distribution within FPOs.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">Implementation Recommendations</h3>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li><strong>Capacity Building:</strong> Train FPO managers on fair allocation mechanisms and their computational implementation</li>
+                <li><strong>Transparency:</strong> Make allocation rules clear and verifiable to build farmer trust</li>
+                <li><strong>Parameter Calibration:</strong> Conduct pilot studies to empirically estimate α and β for different regions/crop types</li>
+                <li><strong>Cost Subsidies:</strong> Government support for MRV costs to reduce C<sub>base</sub> and C<sub>var</sub>, improving overall participation</li>
+                <li><strong>Digital Infrastructure:</strong> Develop platforms for automated Shapley computation and transparent credit trading</li>
+            </ul>
+        </section>
+
+        <section id="methodology">
+            <h2>Experimental Methodology</h2>
+            
+            <h3>Synthetic Data Generation</h3>
+            <p>Created representative dataset of N=250 farmers with heterogeneous characteristics:</p>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li><strong>Farm Size:</strong> Gamma distribution (shape=2, scale=1.5) to reflect small farm prevalence</li>
+                <li><strong>Carbon Credits (q<sub>i</sub>):</strong> Gamma distribution (shape=2.5, scale=1.8), minimum 0.1 tCO2e</li>
+                <li><strong>Standalone Payoff (r<sub>i</sub>):</strong> Normal distribution (μ=20,000 INR, σ=5,000), minimum 5,000 INR</li>
+                <li><strong>True Cost (c<sub>i</sub>):</strong> Gamma distribution (shape=3, scale=800) + 500 INR base, minimum 100 INR</li>
+            </ul>
+
+            <h3>Computational Approaches</h3>
+            <div class="two-column">
+                <div class="highlight-card">
+                    <h3>Exact Methods (n ≤ 10)</h3>
+                    <p>Complete enumeration of all permutations or coalitions for precise Shapley value calculation and Core verification.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Approximation (n > 10)</h3>
+                    <p>Monte Carlo sampling with 10,000 random permutations for Shapley estimation. Core checks limited to n ≤ 15 due to O(2<sup>n</sup>) complexity.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">Evaluation Metrics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Definition</th>
+                        <th>Interpretation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Individual Rationality (IR)</strong></td>
+                        <td>% of farmers with payoff ≥ standalone</td>
+                        <td>Measures voluntary participation incentive</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gini Coefficient</strong></td>
+                        <td>Inequality measure (0=perfect equality, 1=maximum inequality)</td>
+                        <td>Assesses fairness of payoff distribution</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Core Stability</strong></td>
+                        <td>No blocking coalitions exist</td>
+                        <td>Ensures coalition long-term viability</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Average Farmer Profit</strong></td>
+                        <td>Mean payoff across all farmers</td>
+                        <td>Overall welfare indicator</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Surplus</strong></td>
+                        <td>Buyer value - Total true costs</td>
+                        <td>Market efficiency measure</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="limitations">
+            <h2>Limitations & Future Work</h2>
+            
+            <h3>Current Limitations</h3>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li><strong>Synthetic Data:</strong> Results based on simulated farmer profiles; empirical validation with real FPO data needed</li>
+                <li><strong>Simplified Characteristic Function:</strong> v(S) model assumes specific functional form; reality may be more complex</li>
+                <li><strong>Computational Scalability:</strong> Core stability verification limited to small coalitions (n ≤ 15)</li>
+                <li><strong>Static Analysis:</strong> Doesn't model dynamic effects, repeated interactions, or learning over time</li>
+                <li><strong>Single-Stage Market:</strong> Doesn't capture multi-tier market structures or secondary trading</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">Future Research Directions</h3>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>Empirical Calibration</h3>
+                    <p>Partner with existing FPOs to calibrate characteristic function parameters (α, β) using real-world data on costs, revenues, and synergies.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Strategic Aggregators</h3>
+                    <p>Model aggregators as strategic players optimizing member recruitment, cost management, and market interactions.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Scalable Algorithms</h3>
+                    <p>Develop approximate Core verification methods and efficient Shapley computation for large coalitions (n > 100).</p>
+                </div>
+                <!-- <div class="highlight-card">
+                    <h3>Dynamic Analysis</h3>
+                    <p>Extend to repeated games, coalition reformation dynamics, and learning effects over multiple market cycles.</p>
+                </div> -->
+                <!-- <div class="highlight-card">
+                    <h3>Regional Heterogeneity</h3>
+                    <p>Account for geographic, crop-specific, and cultural variations affecting coalition formation and preferences.</p>
+                </div> -->
+                <div class="highlight-card">
+                    <h3>Mechanism Automation</h3>
+                    <p>Design automated mechanism discovery using machine learning to optimize for multiple objectives in complex environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusions">
+            <h2>Conclusions</h2>
+            <p><em>Note: These results are based on synthetic data experiments and should be treated as indicative rather than conclusive pending empirical validation.</em></p>
+
+            <div style="margin-top: 30px;">
+                <h3>Key Takeaways</h3>
+                <ol style="padding-left: 25px; margin-top: 15px; line-height: 1.8;">
+                    <li><strong>FPOs are Essential:</strong> Farmer aggregation through FPOs is not merely beneficial but likely essential for VCM viability for smallholders, with simulations showing 5-18% value increases based on coalition size.</li>
+                    
+                    <li><strong>Shapley Value Excels:</strong> Among allocation mechanisms tested, Shapley value consistently provides the best combination of fairness (Gini ≈ 0.14), individual rationality (100% vs. standalone), and Core stability.</li>
+                    
+                    <li><strong>Auction Mechanisms Fall Short:</strong> Standard VCG and Uniform Price auctions, while efficient for surplus maximization, fail to guarantee participation incentives relative to farmers' baseline agricultural activities (< 10% IR).</li>
+                    
+                    <li><strong>Critical Parameter Sensitivity:</strong> Outcomes highly sensitive to α (baseline scaling) and β (synergy effects). Ensuring α ≥ 1.0 is crucial; positive β dramatically improves farmer welfare.</li>
+                    
+                    <li><strong>Aggregator Balance Required:</strong> A critical commission threshold exists (15-20%) beyond which voluntary participation collapses. Policy must balance aggregator sustainability with farmer incentives.</li>
+                    
+                    <li><strong>Heterogeneity Handled Well:</strong> Shapley allocation maintains proportional fairness across small and large farmers, with uniform percentage gains preventing domination by larger players.</li>
+                    
+                    <li><strong>Game Theory as Policy Tool:</strong> This work demonstrates that game-theoretic and mechanism design frameworks provide actionable, quantitative insights for real-world policy implementation beyond theoretical analysis.</li>
+                </ol>
+            </div>
+
+            <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #28407a;">
+                <h3 style="margin-top: 0;">Practical Impact</h3>
+                <p>This research provides evidence-based guidance for policymakers designing India's agricultural VCM framework. By integrating cooperative game theory insights on internal FPO dynamics with mechanism design principles for external market interactions, the study offers a unified framework to achieve dual goals: <strong>enhancing farmer welfare while advancing national climate objectives</strong>.</p>
+            </div>
+        </section>
+
+        <section id="acknowledgments">
+            <h2>Acknowledgments</h2>
+            <p style="line-height: 1.8;">I would like to express my sincere gratitude to <strong>Prof. Y. Narahari</strong>, <strong>Prof. Siddharth Barman</strong>, and the members of the <strong>Game Theory Lab</strong> for their invaluable guidance, insightful feedback, and continuous encouragement throughout this project for the E1 254 Game Theory and Mechanism Design course at IISc Bangalore.</p>
+            
+            <h3 style="margin-top: 30px;">Use of AI Tools</h3>
+            <p style="line-height: 1.8;">In preparing this document, AI language models (GPT, BERT/Gemini) were utilized to enhance writing quality, provide summaries, and gain additional insights. Large Language Models also assisted in exploring statistical distributions and parameter ranges for synthetic data generation. All AI-generated content was carefully verified for accuracy and factual integrity.</p>
+        </section>
+
+        <section id="resources">
+            <h3 style="margin-top: 30px;">Key Algorithms Implemented</h3>
+            <ul style="padding-left: 20px; margin-top: 15px;">
+                <li>Exact Shapley Value Calculation (Permutation & Coalition Methods)</li>
+                <li>Monte Carlo Shapley Value Approximation</li>
+                <li>Core Stability Verification</li>
+                <li>VCG Auction Mechanism with Price Threshold</li>
+                <li>Uniform Price Auction Clearing</li>
+                <li>Characteristic Function with Synergy Modeling</li>
+                <li>Aggregator-Mediated Coalition Analysis</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container3">
+            <p>© 2025 Yalla Mahanth | <a class="my-link" href="https://mahanthyalla.in">mahanthyalla.in</a></p>
+            <p style="margin-top: 10px;">Game Theory and Mechanism Design (E1 254) | Indian Institute of Science, Bengaluru</p>
+        </div>
+    </footer>
+</body>
+</html>
