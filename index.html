@@ -110,6 +110,14 @@
         .btn-secondary:hover {
             box-shadow: 0 6px 20px rgba(40, 64, 122, 0.6);
         }
+        .btn-outline {
+            background: #15161a;
+            box-shadow: 0 4px 15px rgba(11, 18, 34, 0.4);
+        }
+
+        .btn-outline:hover {
+            box-shadow: 0 6px 20px rgba(11, 18, 34, 0.6);
+        }
 
         main {
             background: white;
@@ -120,7 +128,7 @@
         }
 
         section {
-            padding: 60px 40px;
+            padding: 40px 40px;
             border-bottom: 1px solid #e2e8f0;
         }
 
@@ -429,6 +437,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -439,8 +448,12 @@
             <p class="affiliation">Department of Computer Science and Automation</p>
             <p class="affiliation">Indian Institute of Science, Bengaluru</p>
             <div class="buttons">
-                <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject" class="btn" target="_blank">View on GitHub</a>
-                <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject/blob/main/VCM_in_AS_Yalla_Mahanth.pdf" class="btn btn-secondary" target="_blank">Read Paper 📄</a>
+                <!-- <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject" class="btn" target="_blank">View on GitHub</a> -->
+                 <a href="https://github.com/Mahanth-Maha/GameTheory2025MiniProject" class="btn" target="_blank">
+                    <i class="fab fa-github" style="color: #ffffff; font-size: 18px; margin-right: 8px;"></i> View on GitHub
+                </a>
+                <a href="https://mahanthyalla.in/GameTheory2025MiniProject/Report/VCM_in_AS_Yalla_Mahanth.pdf" class="btn btn-secondary" target="_blank">Read Paper 📄</a>
+                <!-- <a href="https://mahanthyalla.in/projects" class="btn btn-tertiary" target="_blank">All Projects</a> -->
             </div>
         </div>
     </header>
@@ -954,6 +967,9 @@
                 <li>Characteristic Function with Synergy Modeling</li>
                 <li>Aggregator-Mediated Coalition Analysis</li>
             </ul>
+        </section>
+        <section id="more-projects" style="text-align: center; margin: 50px 0;">
+            <a href="https://mahanthyalla.in/projects" class="btn btn-outline">See All Projects of Mine →</a>
         </section>
     </main>
 
